@@ -126,45 +126,6 @@ export function Header() {
                 <Phone className="w-4 h-4 text-blue-300" />
                 <span className="text-white/90">(48) 3500-0962</span>
               </a>
-              
-              {/* Bairros com dropdown */}
-              <div
-                className="relative"
-                onMouseEnter={() => setIsLocationOpen(true)}
-                onMouseLeave={() => setIsLocationOpen(false)}
-              >
-                <button className="flex items-center space-x-2 text-white/90 hover:text-white text-xs font-medium transition-colors">
-                  <MapPin className="w-4 h-4 text-blue-300" />
-                  <span>Bairros</span>
-                  <ChevronDown className={`w-3 h-3 text-red-500 transition-transform duration-300 ${isLocationOpen ? 'rotate-180' : ''}`} />
-                </button>
-                
-                {/* Dropdown de Bairros */}
-                {isLocationOpen && (
-                  <div className="absolute top-full left-0 mt-2 w-80 bg-white rounded-lg shadow-xl border border-gray-200 z-[60] max-h-96 overflow-y-auto">
-                    <div className="p-4">
-                      <div className="space-y-2">
-                        <div className="flex items-center space-x-2 text-gray-700 mb-4">
-                          <MapPin className="w-5 h-5 text-blue-600" />
-                          <span className="font-bold text-base">CONHEÇA OS BAIRROS QUE ATENDEMOS</span>
-                        </div>
-                        <div className="space-y-1">
-                          {neighborhoods.map((neighborhood, index) => (
-                            <Link
-                              key={index}
-                              href="/cobertura"
-                              onClick={() => setIsLocationOpen(false)}
-                              className="block px-3 py-2 text-sm text-gray-700 hover:bg-blue-50 rounded-lg transition-colors"
-                            >
-                              {neighborhood}
-                            </Link>
-                          ))}
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                )}
-              </div>
             </div>
             
             {/* Links à direita */}
@@ -303,62 +264,6 @@ export function Header() {
               )}
             </div>
 
-            {/* Neighborhoods Select */}
-            <div
-              className="relative"
-              onMouseEnter={() => setIsNeighborhoodsOpen(true)}
-              onMouseLeave={() => setIsNeighborhoodsOpen(false)}
-            >
-              <button className="text-gray-700 hover:text-blue-400 hover:bg-blue-50 px-3 py-2 rounded-lg font-medium transition-all duration-300 flex items-center space-x-1">
-                <MapPin className="w-4 h-4" />
-                <span>Bairros</span>
-                <ChevronDown className={`w-4 h-4 transition-transform duration-300 ${isNeighborhoodsOpen ? 'rotate-180' : ''}`} />
-              </button>
-              
-              {/* Neighborhoods Dropdown */}
-              {isNeighborhoodsOpen && (
-                <div className="absolute top-full right-0 mt-2 w-80 bg-white rounded-xl shadow-2xl border-2 border-blue-100 z-[100]">
-                  <div className="p-4 border-b border-gray-200">
-                    <div className="flex items-center space-x-2 text-gray-700 mb-2">
-                      <MapPin className="w-5 h-5 text-blue-600" />
-                      <span className="font-semibold">Bairros Atendidos</span>
-                    </div>
-                    <div className="relative">
-                      <Search className="absolute left-3 top-1/2 transform -translate-y-1/2 w-4 h-4 text-gray-400" />
-                      <input
-                        type="text"
-                        placeholder="Buscar bairro..."
-                        value={neighborhoodSearch}
-                        onChange={(e) => setNeighborhoodSearch(e.target.value)}
-                        className="w-full pl-10 pr-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-transparent text-sm"
-                      />
-                    </div>
-                  </div>
-                  <div className="max-h-64 overflow-y-auto">
-                    {neighborhoods
-                      .filter(neighborhood => 
-                        neighborhood.toLowerCase().includes(neighborhoodSearch.toLowerCase())
-                      )
-                      .map((neighborhood, index) => (
-                        <Link
-                          key={index}
-                          href="/cobertura"
-                          className="block px-4 py-3 hover:bg-blue-50 transition-colors border-b border-gray-100 last:border-b-0"
-                        >
-                          <span className="text-gray-700 font-medium text-sm">{neighborhood}</span>
-                        </Link>
-                      ))}
-                    {neighborhoods.filter(neighborhood => 
-                      neighborhood.toLowerCase().includes(neighborhoodSearch.toLowerCase())
-                    ).length === 0 && (
-                      <div className="px-4 py-8 text-center text-gray-500 text-sm">
-                        Nenhum bairro encontrado
-                      </div>
-                    )}
-                  </div>
-                </div>
-              )}
-            </div>
 
             {/* Other nav items */}
             {navItems.map((item) => (
