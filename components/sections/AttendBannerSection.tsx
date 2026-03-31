@@ -161,7 +161,7 @@ export function AttendBannerSection() {
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05, y: -5 }}
-                className="block rounded-2xl overflow-hidden shadow-2xl hover:shadow-[0_0_30px_rgba(37,211,102,0.5)] transition-all duration-300"
+                className="block transition-all duration-300"
               >
                 <img
                   src="/media/wifi.webp"
