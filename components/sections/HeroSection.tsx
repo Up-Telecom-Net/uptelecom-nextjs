@@ -17,14 +17,7 @@ export function HeroSection() {
           playsInline
           className="w-full h-full object-cover opacity-30"
         >
-          <source src="/media/internet-cables-connection.mp4" type="video/mp4" />
-          <source src="/media/internet-cables-connection.webm" type="video/webm" />
-          {/* Fallback para GIF se o vídeo não existir */}
-          <img 
-            src="/media/wi-fi-digital.gif" 
-            alt="" 
-            className="w-full h-full object-cover"
-          />
+          <source src="/media/wi-fi-digital.mp4" type="video/mp4" />
         </video>
       </div>
 
@@ -385,19 +378,8 @@ export function HeroSection() {
                   playsInline
                   className="w-full h-full object-cover"
                 >
-                  <source src="/media/hero-video.mp4" type="video/mp4" />
-                  <source src="/media/hero-video.webm" type="video/webm" />
+                  <source src="/media/wi-fi-digital.mp4" type="video/mp4" />
                 </video>
-                {/* Fallback para GIF se o vídeo não existir */}
-                <img 
-                  src="/media/wi-fi-digital.gif" 
-                  alt="Internet animada" 
-                  className="absolute inset-0 w-full h-full object-cover"
-                  onError={(e) => {
-                    // Se o GIF também falhar, mostra o placeholder
-                    e.currentTarget.style.display = 'none';
-                  }}
-                />
               </div>
             </div>
           </motion.div>
