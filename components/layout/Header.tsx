@@ -171,7 +171,7 @@ export function Header() {
           {/* Logo */}
           <Link href="/" className="flex items-center group">
             <img
-              src="/media/logo/logoUp telecom.png"
+              src="/media/logo/logo-uptelecom.png"
               alt="Up Telecom"
               className="h-12 w-auto"
             />

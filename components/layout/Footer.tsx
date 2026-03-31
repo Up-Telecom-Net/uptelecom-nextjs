@@ -29,7 +29,7 @@ export function Footer() {
           <div className="space-y-4">
             <div className="flex items-center">
               <img
-                src="/media/logo/logoUp telecom.png"
+                src="/media/logo/logo-uptelecom.png"
                 alt="Up Telecom"
                 className="h-10 w-auto brightness-0 invert"
               />
