@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Check, Zap, Wifi, Download, Upload, Infinity } from "lucide-react";
+import { Check, Zap, Wifi, Download, Upload, Infinity as InfinityIcon } from "lucide-react";
 import Link from "next/link";
 
 const fiberPlans = [
@@ -105,7 +105,7 @@ export function PlansSection() {
                 </li>
                 <li className="flex items-center space-x-3 justify-start">
                   <div className="flex items-center justify-center w-8 h-8 bg-blue-100 rounded-full">
-                    <Infinity className="w-4 h-4 text-blue-600" />
+                    <InfinityIcon className="w-4 h-4 text-blue-600" />
                   </div>
                   <span className="text-gray-700">Internet ilimitada</span>
                 </li>
