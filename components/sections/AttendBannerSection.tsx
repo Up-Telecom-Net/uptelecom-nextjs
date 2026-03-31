@@ -164,13 +164,9 @@ export function AttendBannerSection() {
                 className="block rounded-2xl overflow-hidden shadow-2xl hover:shadow-[0_0_30px_rgba(37,211,102,0.5)] transition-all duration-300"
               >
                 <img
-                  src="/media/whatsapp-atendimento.gif"
-                  alt="Atendimento WhatsApp - Assine agora!"
+                  src="/media/wifi.webp"
+                  alt="Internet Wi-Fi Up Telecom"
                   className="w-full h-auto object-cover"
-                  onError={(e) => {
-                    // Fallback caso o GIF não exista
-                    e.currentTarget.src = "/media/conversar.png";
-                  }}
                 />
               </motion.a>
 
