@@ -27,9 +27,12 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="flex items-center space-x-2">
-              <Wifi className="w-6 h-6 text-blue-400" />
-              <span className="text-xl font-bold text-white">Up Telecom</span>
+            <div className="flex items-center">
+              <img
+                src="/media/logo/logoUp telecom.png"
+                alt="Up Telecom"
+                className="h-10 w-auto brightness-0 invert"
+              />
             </div>
             <p className="text-sm text-gray-400">
               Internet com velocidade para todos os lugares! Conectando você com o mundo através da tecnologia mais avançada.

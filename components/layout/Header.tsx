@@ -208,14 +208,12 @@ export function Header() {
         <nav className="container mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center">
         <div className="flex items-center justify-between w-full h-full">
           {/* Logo */}
-          <Link href="/" className="flex items-center space-x-2 group">
-            <div className="relative">
-              <Wifi className="w-8 h-8 text-blue-600 group-hover:text-blue-500 transition-colors" />
-              <div className="absolute inset-0 bg-blue-400/20 rounded-full blur-xl group-hover:bg-blue-400/30 transition-all" />
-            </div>
-            <span className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-500 bg-clip-text text-transparent">
-              Up Telecom
-            </span>
+          <Link href="/" className="flex items-center group">
+            <img
+              src="/media/logo/logoUp telecom.png"
+              alt="Up Telecom"
+              className="h-12 w-auto"
+            />
           </Link>
 
           {/* Desktop Navigation (md and up) */}
