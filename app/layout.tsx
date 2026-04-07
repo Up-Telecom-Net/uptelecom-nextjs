@@ -12,7 +12,7 @@ export const metadata: Metadata = {
     default: "Up Telecom - Internet Fibra Óptica em Florianópolis | Ultra Velocidade",
     template: "%s | Up Telecom",
   },
-  description: "Internet fibra óptica de alta velocidade em Florianópolis. Planos de 200MB a 900MB. Internet via rádio para zonas rurais. Suporte técnico especializado.",
+  description: "Internet fibra óptica de alta velocidade em Florianópolis. Planos de 550MB a 900MB. Internet via rádio para zonas rurais. Suporte técnico especializado.",
   keywords: [
     "internet fibra óptica",
     "internet Florianópolis",
@@ -36,7 +36,7 @@ export const metadata: Metadata = {
     url: "https://uptelecomnet.com.br",
     siteName: "Up Telecom",
     title: "Up Telecom - Internet Fibra Óptica em Florianópolis",
-    description: "Internet fibra óptica de alta velocidade em Florianópolis. Planos de 200MB a 900MB com tecnologia de ponta.",
+    description: "Internet fibra óptica de alta velocidade em Florianópolis. Planos de 550MB a 900MB com tecnologia de ponta.",
     images: [
       {
         url: "/og-image.jpg",
@@ -49,7 +49,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Up Telecom - Internet Fibra Óptica em Florianópolis",
-    description: "Internet fibra óptica de alta velocidade em Florianópolis. Planos de 200MB a 900MB.",
+    description: "Internet fibra óptica de alta velocidade em Florianópolis. Planos de 550MB a 900MB.",
     images: ["/og-image.jpg"],
   },
   robots: {

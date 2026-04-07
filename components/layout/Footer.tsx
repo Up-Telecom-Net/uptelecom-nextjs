@@ -29,9 +29,9 @@ export function Footer() {
           <div className="space-y-4">
             <div className="flex items-center">
               <img
-                src="/media/logo/logo-up2.png"
+                src="/media/logo/logo_uptelelcom_branca.png"
                 alt="Up Telecom"
-                className="h-10 w-auto brightness-0 invert"
+                className="h-10 w-auto"
               />
             </div>
             <p className="text-sm text-gray-400">

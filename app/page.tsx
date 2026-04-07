@@ -13,10 +13,10 @@ import { CTASection } from "@/components/sections/CTASection";
 
 export const metadata = {
   title: "Internet Fibra Óptica em Florianópolis | Up Telecom",
-  description: "Internet fibra óptica de alta velocidade em Florianópolis. Planos de 200MB a 900MB. Tecnologia de ponta, suporte especializado e internet ilimitada.",
+  description: "Internet fibra óptica de alta velocidade em Florianópolis. Planos de 550MB a 900MB. Tecnologia de ponta, suporte especializado e internet ilimitada.",
   openGraph: {
     title: "Up Telecom - Internet Fibra Óptica em Florianópolis",
-    description: "Internet fibra óptica de alta velocidade em Florianópolis. Planos de 200MB a 900MB.",
+    description: "Internet fibra óptica de alta velocidade em Florianópolis. Planos de 550MB a 900MB.",
   },
 };
 

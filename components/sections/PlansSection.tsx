@@ -7,21 +7,21 @@ import Link from "next/link";
 const fiberPlans = [
   {
     name: "Básico",
-    price: "89,90",
-    speed: "200MB",
-    upload: "200MB",
+    price: "104,99",
+    speed: "550MB",
+    upload: "550MB",
     popular: false,
   },
   {
     name: "Premium",
-    price: "99,90",
-    speed: "500MB",
-    upload: "500MB",
+    price: "129,99",
+    speed: "700MB",
+    upload: "700MB",
     popular: true,
   },
   {
     name: "Extreme",
-    price: "149,90",
+    price: "149,99",
     speed: "900MB",
     upload: "900MB",
     popular: false,
