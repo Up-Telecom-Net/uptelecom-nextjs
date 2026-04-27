@@ -6,7 +6,6 @@ import { ServicesSection } from "@/components/sections/ServicesSection";
 import { ServicesBannerSection } from "@/components/sections/ServicesBannerSection";
 import { FeaturesSection } from "@/components/sections/FeaturesSection";
 import { PlansSection } from "@/components/sections/PlansSection";
-import { RadioPlansSection } from "@/components/sections/RadioPlansSection";
 import { CoverageSection } from "@/components/sections/CoverageSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { CTASection } from "@/components/sections/CTASection";
@@ -31,7 +30,6 @@ export default function Home() {
       <ServicesSection />
       <FeaturesSection />
       <PlansSection />
-      <RadioPlansSection />
       <CoverageSection />
       <TestimonialsSection />
       <CTASection />

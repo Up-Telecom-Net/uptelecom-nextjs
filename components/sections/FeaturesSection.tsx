@@ -31,7 +31,7 @@ const features = [
   {
     icon: Wifi,
     title: "Cobertura Ampliada",
-    description: "Atendemos zonas rurais e residenciais com internet via rádio, levando conectividade para todos os lugares.",
+    description: "Atendemos diversos bairros e regiões com internet fibra óptica, levando conectividade de qualidade para todos os lugares.",
     gradient: "from-blue-600 to-blue-700",
   },
   {

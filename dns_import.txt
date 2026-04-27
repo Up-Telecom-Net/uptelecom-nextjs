@@ -1,0 +1,3 @@
+$ORIGIN uptelecomnet.com.br.
+@	14400	IN	A	76.13.162.24
+www	14400	IN	A	76.13.162.24

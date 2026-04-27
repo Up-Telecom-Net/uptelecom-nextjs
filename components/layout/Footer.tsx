@@ -10,7 +10,6 @@ const footerLinks = {
   ],
   servicos: [
     { href: "/planos", label: "Planos Fibra Óptica" },
-    { href: "/planos#radio", label: "Internet Via Rádio" },
     { href: "/suporte", label: "Suporte Técnico" },
   ],
   cliente: [
