@@ -4,24 +4,24 @@ import { motion } from "framer-motion";
 import { Users, Wifi, Award } from "lucide-react";
 
 const stats = [
-  { 
-    icon: Users, 
-    value: "1000+", 
-    label: "Clientes Satisfeitos", 
+  {
+    icon: Users,
+    value: "3000+",
+    label: "Clientes Satisfeitos",
     gradient: "from-blue-500 to-blue-600",
     shadow: "shadow-blue-500/50"
   },
-  { 
-    icon: Wifi, 
-    value: "10+", 
-    label: "Bairros Atendidos", 
+  {
+    icon: Wifi,
+    value: "10+",
+    label: "Bairros Atendidos",
     gradient: "from-green-500 to-green-600",
     shadow: "shadow-green-500/50"
   },
-  { 
-    icon: Award, 
-    value: "7+", 
-    label: "Anos de Experiência", 
+  {
+    icon: Award,
+    value: "10",
+    label: "Anos de Experiência",
     gradient: "from-purple-500 via-pink-500 to-orange-500",
     shadow: "shadow-pink-500/50"
   },
@@ -31,7 +31,7 @@ export function StatsSection() {
   return (
     <section className="py-24 bg-gradient-to-b from-blue-950 to-blue-900 relative overflow-hidden">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
-        <div className="grid grid-cols-2 lg:grid-cols-3 gap-6 lg:gap-8 max-w-5xl mx-auto justify-items-center">
+        <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 max-w-5xl mx-auto justify-items-center">
           {stats.map((stat, index) => (
             <motion.div
               key={index}

@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { ArrowRight, Zap } from "lucide-react";
-import Link from "next/link";
 import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
 
 export function AttendBannerSection() {
@@ -169,27 +168,6 @@ export function AttendBannerSection() {
                   className="w-full h-auto object-cover"
                 />
               </motion.a>
-
-              {/* Plans Link Card */}
-              <Link
-                href="/planos"
-                className="block"
-              >
-                <motion.div
-                  whileHover={{ scale: 1.02, y: -5 }}
-                  className="group bg-white rounded-2xl p-6 border-2 border-white/30 hover:border-blue-400 transition-all duration-300"
-                >
-                  <div className="flex items-center justify-between">
-                    <div>
-                      <h3 className="text-xl font-bold text-gray-900 mb-2">Ver Planos</h3>
-                      <p className="text-gray-600">Conheça nossos planos e preços</p>
-                    </div>
-                    <div className="flex items-center justify-center w-12 h-12 bg-blue-600 rounded-full group-hover:bg-blue-700 transition-colors duration-300">
-                      <ArrowRight className="w-7 h-7 text-white group-hover:translate-x-1 transition-transform duration-300" />
-                    </div>
-                  </div>
-                </motion.div>
-              </Link>
             </motion.div>
           </div>
         </div>

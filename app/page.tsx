@@ -3,9 +3,10 @@ import { AttendBannerSection } from "@/components/sections/AttendBannerSection";
 import { HighlightsSection } from "@/components/sections/HighlightsSection";
 import { StatsSection } from "@/components/sections/StatsSection";
 import { ServicesSection } from "@/components/sections/ServicesSection";
-import { ServicesBannerSection } from "@/components/sections/ServicesBannerSection";
 import { FeaturesSection } from "@/components/sections/FeaturesSection";
 import { PlansSection } from "@/components/sections/PlansSection";
+import { GamerPlanSection } from "@/components/sections/GamerPlanSection";
+import { PhonePlanSection } from "@/components/sections/PhonePlanSection";
 import { CoverageSection } from "@/components/sections/CoverageSection";
 import { TestimonialsSection } from "@/components/sections/TestimonialsSection";
 import { CTASection } from "@/components/sections/CTASection";
@@ -24,12 +25,13 @@ export default function Home() {
     <>
       <HeroSection />
       <AttendBannerSection />
-      <ServicesBannerSection />
+      <PlansSection />
+      <GamerPlanSection />
+      <PhonePlanSection />
       <StatsSection />
       <HighlightsSection />
       <ServicesSection />
       <FeaturesSection />
-      <PlansSection />
       <CoverageSection />
       <TestimonialsSection />
       <CTASection />
