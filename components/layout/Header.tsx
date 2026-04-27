@@ -201,27 +201,29 @@ export function Header() {
               
               {/* Mega Menu */}
               {isServicesOpen && (
-                <div className="absolute top-full left-0 mt-2 w-[600px] bg-white rounded-2xl shadow-2xl border-2 border-blue-100 p-6 z-[100]">
-                  <div className="grid grid-cols-2 gap-4">
-                    {servicesItems.map((service, index) => (
-                      <Link
-                        key={index}
-                        href={service.href}
-                        className="flex items-start space-x-3 p-4 rounded-xl hover:bg-blue-50 transition-all duration-300 group"
-                      >
-                        <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
-                          <service.icon className="w-6 h-6 text-white" />
-                        </div>
-                        <div>
-                          <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
-                            {service.label}
-                          </h3>
-                          <p className="text-sm text-gray-600 mt-1">
-                            {service.description}
-                          </p>
-                        </div>
-                      </Link>
-                    ))}
+                <div className="absolute top-full left-0 pt-2 w-[600px] z-[100]">
+                  <div className="bg-white rounded-2xl shadow-2xl border-2 border-blue-100 p-6">
+                    <div className="grid grid-cols-2 gap-4">
+                      {servicesItems.map((service, index) => (
+                        <Link
+                          key={index}
+                          href={service.href}
+                          className="flex items-start space-x-3 p-4 rounded-xl hover:bg-blue-50 transition-all duration-300 group"
+                        >
+                          <div className="flex-shrink-0 w-12 h-12 bg-gradient-to-br from-blue-500 to-blue-600 rounded-lg flex items-center justify-center group-hover:scale-110 transition-transform">
+                            <service.icon className="w-6 h-6 text-white" />
+                          </div>
+                          <div>
+                            <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+                              {service.label}
+                            </h3>
+                            <p className="text-sm text-gray-600 mt-1">
+                              {service.description}
+                            </p>
+                          </div>
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 </div>
               )}
@@ -241,24 +243,26 @@ export function Header() {
               
               {/* Dropdown Menu */}
               {isPlanosOpen && (
-                <div className="absolute top-full left-0 mt-2 w-64 bg-white rounded-xl shadow-2xl border-2 border-blue-100 p-4 z-[100]">
-                  <div className="space-y-2">
-                    {planosItems.map((item, index) => (
-                      <Link
-                        key={index}
-                        href={item.href}
-                        className="flex items-start space-x-3 p-3 rounded-lg hover:bg-blue-50 transition-all duration-300 group"
-                      >
-                        <div className="flex-1">
-                          <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
-                            {item.label}
-                          </h3>
-                          <p className="text-sm text-gray-600 mt-1">
-                            {item.description}
-                          </p>
-                        </div>
-                      </Link>
-                    ))}
+                <div className="absolute top-full left-0 pt-2 w-64 z-[100]">
+                  <div className="bg-white rounded-xl shadow-2xl border-2 border-blue-100 p-4">
+                    <div className="space-y-2">
+                      {planosItems.map((item, index) => (
+                        <Link
+                          key={index}
+                          href={item.href}
+                          className="flex items-start space-x-3 p-3 rounded-lg hover:bg-blue-50 transition-all duration-300 group"
+                        >
+                          <div className="flex-1">
+                            <h3 className="font-semibold text-gray-900 group-hover:text-blue-600 transition-colors">
+                              {item.label}
+                            </h3>
+                            <p className="text-sm text-gray-600 mt-1">
+                              {item.description}
+                            </p>
+                          </div>
+                        </Link>
+                      ))}
+                    </div>
                   </div>
                 </div>
               )}
