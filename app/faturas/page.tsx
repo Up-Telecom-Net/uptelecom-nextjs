@@ -9,7 +9,7 @@ export const metadata = {
 export default function FaturasPage() {
   return (
     <div className="pt-20 min-h-screen bg-gradient-to-b from-white to-gray-50">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-16">
+      <div className="container mx-auto px-[30px] sm:px-8 lg:px-12 py-16">
         <div className="max-w-4xl mx-auto text-center">
           <div className="inline-flex items-center justify-center w-20 h-20 bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl mb-6">
             <FileText className="w-10 h-10 text-white" />

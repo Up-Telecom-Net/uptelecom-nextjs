@@ -8,7 +8,7 @@ export function SobreContent() {
     <div className="pt-20 min-h-screen bg-gradient-to-b from-white to-gray-50">
       {/* Hero Section */}
       <section className="py-20 bg-gradient-to-br from-blue-600 to-blue-700 text-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-[30px] sm:px-8 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             animate={{ opacity: 1, y: 0 }}
@@ -27,7 +27,7 @@ export function SobreContent() {
 
       {/* Nossa História */}
       <section className="py-20">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-[30px] sm:px-8 lg:px-12">
           <div className="max-w-4xl mx-auto">
             <motion.div
               initial={{ opacity: 0, y: 30 }}
@@ -50,7 +50,7 @@ export function SobreContent() {
 
       {/* Valores */}
       <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8">
+        <div className="container mx-auto px-[30px] sm:px-8 lg:px-12">
           <motion.div
             initial={{ opacity: 0, y: 30 }}
             whileInView={{ opacity: 1, y: 0 }}

@@ -53,7 +53,7 @@ export function GamerPlanSection() {
         <Sparkles className="w-7 h-7 text-violet-400" />
       </motion.div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="container mx-auto px-[30px] sm:px-8 lg:px-12 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 items-center gap-8 lg:min-h-[600px] py-12 sm:py-16 lg:py-20">
           {/* Coluna esquerda - Conteúdo */}
           <motion.div

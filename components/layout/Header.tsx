@@ -57,8 +57,8 @@ const servicesItems = [
   },
   {
     icon: Smartphone,
-    label: "Aplicativo GB",
-    href: "/app-gb",
+    label: "Aplicativo Up Telecom",
+    href: "/app-up-telecom",
     description: "Baixe nosso app",
   },
   {
@@ -103,8 +103,9 @@ export function Header() {
     <>
       {/* Top Bar */}
       <div className="fixed top-0 left-0 right-0 z-[55] bg-blue-600 h-10 overflow-visible">
-        <div className="container mx-auto px-4 sm:px-6 lg:px-8 h-full overflow-visible">
-          <div className="flex items-center justify-between h-full overflow-visible">
+        <div className="container mx-auto px-[30px] sm:px-8 lg:px-12 h-full overflow-visible">
+          {/* Desktop / tablet (md+): contatos à esquerda + links à direita */}
+          <div className="hidden md:flex items-center justify-between h-full overflow-visible">
             {/* Informações de contato à esquerda */}
             <div className="flex items-center space-x-6">
               {/* WhatsApp */}
@@ -117,7 +118,7 @@ export function Header() {
                 <WhatsAppIcon size={16} className="text-blue-300" />
                 <span className="text-white/90">(48) 99689-1962</span>
               </a>
-              
+
               {/* Telefone */}
               <a
                 href="tel:4835000962"
@@ -127,7 +128,7 @@ export function Header() {
                 <span className="text-white/90">(48) 3500-0962</span>
               </a>
             </div>
-            
+
             {/* Links à direita */}
             <div className="flex items-center space-x-6">
               <Link
@@ -150,6 +151,26 @@ export function Header() {
               </Link>
             </div>
           </div>
+
+          {/* Mobile (< md): apenas Assinar Agora + Central do Cliente */}
+          <div className="flex md:hidden items-center justify-between gap-2 h-full">
+            <a
+              href="https://wa.me/5548996891962?text=Ol%C3%A1%21%20Quero%20assinar%20um%20plano."
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center justify-center gap-1.5 flex-1 h-7 px-3 rounded-full bg-white text-blue-600 text-xs font-bold transition-colors hover:bg-blue-50"
+            >
+              <WhatsAppIcon size={14} className="text-green-600 shrink-0" />
+              <span className="truncate">Assinar Agora</span>
+            </a>
+            <Link
+              href="/central-cliente"
+              className="flex items-center justify-center gap-1.5 flex-1 h-7 px-3 rounded-full border border-white/60 text-white text-xs font-bold transition-colors hover:bg-white/10"
+            >
+              <LogIn className="w-3.5 h-3.5 shrink-0" />
+              <span className="truncate">Central do Cliente</span>
+            </Link>
+          </div>
         </div>
       </div>
 
@@ -166,7 +187,7 @@ export function Header() {
           paddingRight: "0px",
         }}
       >
-        <nav className="container mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center">
+        <nav className="container mx-auto px-[30px] sm:px-8 lg:px-12 h-20 flex items-center">
         <div className="flex items-center justify-between w-full h-full">
           {/* Logo */}
           <Link href="/" className="flex items-center group">

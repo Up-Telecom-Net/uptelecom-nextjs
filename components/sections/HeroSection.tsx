@@ -119,7 +119,7 @@ export function HeroSection() {
         />
       </motion.div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="container mx-auto px-[30px] sm:px-8 lg:px-12 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center max-w-7xl mx-auto">
           {/* Left Column - Text Content */}
           <div className="text-left">
@@ -177,15 +177,13 @@ export function HeroSection() {
           </motion.div>
           </div>
 
-          {/* Right Column - Animated Video/GIF */}
+          {/* Right Column - Animated Video/GIF (apenas desktop, decorativo) */}
           <motion.div
             initial={{ opacity: 0, x: 50 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.8, delay: 0.3 }}
-            className="relative"
+            className="relative hidden lg:block w-full max-w-[827px] h-[495px] mx-auto"
             style={{
-              height: '495px',
-              width: '827px',
               backdropFilter: 'blur(8px)'
             }}
           >

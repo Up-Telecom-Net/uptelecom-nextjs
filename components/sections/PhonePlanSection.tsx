@@ -8,12 +8,29 @@ import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
 export function PhonePlanSection() {
   return (
     <section
-      className="relative py-16 sm:py-20 lg:py-24 overflow-hidden"
+      className="relative py-16 sm:py-20 lg:py-24 overflow-hidden bg-[#0a0420] bg-no-repeat bg-cover bg-center lg:bg-right"
       style={{
-        background:
-          "linear-gradient(135deg, #050118 0%, #0a0420 30%, #14082c 60%, #1a0a3e 100%)",
+        backgroundImage: "url('/media/Telephone.jpeg')",
       }}
     >
+      {/* Overlay gradient para legibilidade do conteúdo */}
+      <div
+        className="absolute inset-0"
+        style={{
+          background:
+            "linear-gradient(90deg, rgba(10, 4, 32, 0.92) 0%, rgba(20, 8, 50, 0.82) 30%, rgba(30, 13, 70, 0.6) 60%, rgba(30, 13, 70, 0.4) 100%)",
+        }}
+      />
+
+      {/* Vinheta */}
+      <div
+        className="absolute inset-0 pointer-events-none"
+        style={{
+          background:
+            "linear-gradient(180deg, rgba(10, 4, 32, 0.4) 0%, transparent 18%, transparent 82%, rgba(10, 4, 32, 0.4) 100%)",
+        }}
+      />
+
       {/* Decoração de fundo - blobs animados */}
       <div className="absolute inset-0 overflow-hidden pointer-events-none">
         <motion.div
@@ -23,7 +40,7 @@ export function PhonePlanSection() {
             scale: [1, 1.2, 1],
           }}
           transition={{ duration: 20, repeat: Infinity, ease: "easeInOut" }}
-          className="absolute top-20 right-0 w-[500px] h-[500px] opacity-30"
+          className="absolute top-20 right-0 w-[500px] h-[500px] opacity-25"
           style={{
             background:
               "radial-gradient(circle, rgba(59, 130, 246, 0.5) 0%, rgba(99, 102, 241, 0.3) 50%, transparent 70%)",
@@ -38,7 +55,7 @@ export function PhonePlanSection() {
             scale: [1, 1.3, 1],
           }}
           transition={{ duration: 22, repeat: Infinity, ease: "easeInOut", delay: 3 }}
-          className="absolute bottom-0 left-0 w-[600px] h-[600px] opacity-25"
+          className="absolute bottom-0 left-0 w-[600px] h-[600px] opacity-20"
           style={{
             background:
               "radial-gradient(circle, rgba(139, 92, 246, 0.5) 0%, rgba(59, 130, 246, 0.3) 50%, transparent 70%)",
@@ -46,18 +63,9 @@ export function PhonePlanSection() {
             borderRadius: "50%",
           }}
         />
-        {/* Grid pattern */}
-        <div
-          className="absolute inset-0 opacity-[0.04]"
-          style={{
-            backgroundImage:
-              "linear-gradient(rgba(147, 197, 253, 0.5) 1px, transparent 1px), linear-gradient(90deg, rgba(147, 197, 253, 0.5) 1px, transparent 1px)",
-            backgroundSize: "50px 50px",
-          }}
-        />
       </div>
 
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="container mx-auto px-[30px] sm:px-8 lg:px-12 relative z-10">
         {/* Cabeçalho */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}

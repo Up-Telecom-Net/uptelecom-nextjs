@@ -30,7 +30,7 @@ const stats = [
 export function StatsSection() {
   return (
     <section className="py-24 bg-gradient-to-b from-blue-950 to-blue-900 relative overflow-hidden">
-      <div className="container mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      <div className="container mx-auto px-[30px] sm:px-8 lg:px-12 relative z-10">
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-6 lg:gap-8 max-w-5xl mx-auto justify-items-center">
           {stats.map((stat, index) => (
             <motion.div
