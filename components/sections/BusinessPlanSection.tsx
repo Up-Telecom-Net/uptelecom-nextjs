@@ -25,9 +25,18 @@ export function BusinessPlanSection() {
         backgroundImage: "url('/media/plano%20empresarial%20fibra%20optica.jpeg')",
       }}
     >
-      {/* Overlay gradient azul-marinho com tom de sky-blue para diferenciar do violeta do gamer */}
+      {/* Overlay opaco no mobile - esconde a imagem que compete com o conteúdo */}
       <div
-        className="absolute inset-0"
+        className="absolute inset-0 lg:hidden"
+        style={{
+          background:
+            "linear-gradient(180deg, rgba(8, 25, 60, 0.94) 0%, rgba(12, 50, 90, 0.96) 100%)",
+        }}
+      />
+
+      {/* Overlay gradient apenas desktop - deixa a imagem visível à direita */}
+      <div
+        className="absolute inset-0 hidden lg:block"
         style={{
           background:
             "linear-gradient(90deg, rgba(8, 25, 60, 0.95) 0%, rgba(12, 74, 110, 0.85) 25%, rgba(7, 89, 133, 0.5) 55%, rgba(3, 105, 161, 0.15) 80%, transparent 100%)",
@@ -157,7 +166,7 @@ export function BusinessPlanSection() {
                   </div>
 
                   <div
-                    className="relative overflow-hidden p-5 sm:p-6 pt-7 sm:pt-8"
+                    className="relative overflow-hidden p-4 sm:p-6 pt-6 sm:pt-8"
                     style={{
                       background: plan.highlight
                         ? "linear-gradient(135deg, #0c4a6e 0%, #0369a1 25%, #0284c7 55%, #06b6d4 100%)"
@@ -204,11 +213,11 @@ export function BusinessPlanSection() {
                       }}
                     />
 
-                    <div className="relative flex items-center justify-between gap-3 sm:gap-4 flex-wrap">
+                    <div className="relative flex items-center justify-between gap-3 sm:gap-4">
                       {/* Velocidade */}
-                      <div className="flex flex-col">
+                      <div className="flex flex-col shrink-0">
                         <span
-                          className={`text-xs sm:text-sm font-bold tracking-[0.25em] uppercase mb-1 ${
+                          className={`text-[10px] sm:text-sm font-bold tracking-[0.2em] sm:tracking-[0.25em] uppercase mb-0.5 sm:mb-1 ${
                             plan.highlight ? "text-cyan-100" : "text-sky-300/80"
                           }`}
                         >
@@ -216,7 +225,7 @@ export function BusinessPlanSection() {
                         </span>
                         <div className="flex items-baseline">
                           <span
-                            className="text-5xl sm:text-6xl md:text-7xl font-black text-white leading-none"
+                            className="text-4xl sm:text-6xl md:text-7xl font-black text-white leading-none"
                             style={{
                               textShadow: plan.highlight
                                 ? "0 2px 8px rgba(0,0,0,0.35), 0 0 30px rgba(34, 211, 238, 0.5)"
@@ -226,7 +235,7 @@ export function BusinessPlanSection() {
                             {plan.speed}
                           </span>
                           <span
-                            className={`text-lg sm:text-xl font-bold ml-1.5 ${
+                            className={`text-sm sm:text-xl font-bold ml-1 sm:ml-1.5 ${
                               plan.highlight ? "text-cyan-100" : "text-sky-200"
                             }`}
                           >
@@ -237,7 +246,7 @@ export function BusinessPlanSection() {
 
                       {/* Divider */}
                       <div
-                        className="hidden sm:block h-14 w-px"
+                        className="h-12 sm:h-14 w-px shrink-0"
                         style={{
                           background: plan.highlight
                             ? "linear-gradient(180deg, transparent, rgba(255,255,255,0.55), transparent)"
@@ -247,7 +256,7 @@ export function BusinessPlanSection() {
 
                       {/* Preço */}
                       <div
-                        className="relative px-4 sm:px-5 py-3 sm:py-3.5 rounded-2xl backdrop-blur-3xl"
+                        className="relative flex-1 sm:flex-none px-3 sm:px-5 py-2.5 sm:py-3.5 rounded-xl sm:rounded-2xl backdrop-blur-3xl"
                         style={{
                           background: plan.highlight
                             ? "linear-gradient(135deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0.15) 100%)"
@@ -262,26 +271,26 @@ export function BusinessPlanSection() {
                           WebkitBackdropFilter: "blur(40px) saturate(1.8)",
                         }}
                       >
-                        <div className="flex items-baseline">
+                        <div className="flex items-baseline justify-end">
                           <span
-                            className={`text-xs sm:text-sm font-bold mr-1 ${
+                            className={`text-[10px] sm:text-sm font-bold mr-1 ${
                               plan.highlight ? "text-cyan-100" : "text-sky-300"
                             }`}
                           >
                             R$
                           </span>
                           <span
-                            className="text-3xl sm:text-4xl md:text-5xl font-black text-white leading-none"
+                            className="text-2xl sm:text-4xl md:text-5xl font-black text-white leading-none"
                             style={{ textShadow: "0 2px 6px rgba(0,0,0,0.4)" }}
                           >
                             {plan.price.split(",")[0]}
                           </span>
-                          <span className="text-xl sm:text-2xl font-black text-white">
+                          <span className="text-base sm:text-2xl font-black text-white">
                             ,{plan.price.split(",")[1]}
                           </span>
                         </div>
                         <div
-                          className={`text-[10px] sm:text-xs font-semibold tracking-wider uppercase mt-0.5 text-right ${
+                          className={`text-[9px] sm:text-xs font-semibold tracking-wider uppercase mt-0.5 text-right ${
                             plan.highlight ? "text-cyan-100/80" : "text-sky-300/70"
                           }`}
                         >

@@ -13,9 +13,18 @@ export function GamerPlanSection() {
         backgroundImage: "url('/media/banner-gamer.jpeg')",
       }}
     >
-      {/* Overlay gradient para legibilidade do texto à esquerda, deixando o gamer visível à direita */}
+      {/* Overlay opaco no mobile - esconde a imagem para não competir com o conteúdo */}
       <div
-        className="absolute inset-0"
+        className="absolute inset-0 lg:hidden"
+        style={{
+          background:
+            "linear-gradient(180deg, rgba(10, 4, 32, 0.92) 0%, rgba(20, 8, 50, 0.95) 100%)",
+        }}
+      />
+
+      {/* Overlay gradient apenas desktop - deixa o gamer visível à direita */}
+      <div
+        className="absolute inset-0 hidden lg:block"
         style={{
           background:
             "linear-gradient(90deg, rgba(10, 4, 32, 0.95) 0%, rgba(20, 8, 50, 0.85) 25%, rgba(30, 13, 70, 0.5) 50%, rgba(30, 13, 70, 0.15) 75%, transparent 100%)",
@@ -83,18 +92,18 @@ export function GamerPlanSection() {
             >
               {/* Badge SPEED PLAN CARD - tab no topo-esquerdo */}
               <div
-                className="absolute -top-3 left-6 z-20 px-6 py-2.5"
+                className="absolute -top-3 left-4 sm:left-6 z-20 px-3 py-1.5 sm:px-6 sm:py-2.5"
                 style={{
                   background:
                     "linear-gradient(135deg, #1e40af 0%, #2563eb 50%, #60a5fa 100%)",
-                  borderRadius: "14px 14px 18px 4px",
+                  borderRadius: "12px 12px 14px 4px",
                   boxShadow:
                     "0 8px 24px rgba(37, 99, 235, 0.5), inset 0 1px 0 rgba(255,255,255,0.4), inset 0 -2px 4px rgba(0,0,0,0.2)",
                   border: "1px solid rgba(147, 197, 253, 0.5)",
                 }}
               >
                 <span
-                  className="text-xs sm:text-sm font-black tracking-[0.25em] text-white uppercase"
+                  className="text-[10px] sm:text-sm font-black tracking-[0.2em] sm:tracking-[0.25em] text-white uppercase"
                   style={{ textShadow: "0 1px 2px rgba(0,0,0,0.3)" }}
                 >
                   Speed Plan Card
@@ -103,11 +112,11 @@ export function GamerPlanSection() {
 
               {/* Card principal */}
               <div
-                className="relative overflow-hidden pt-10 pb-5 px-4 sm:pb-6 sm:px-8"
+                className="relative overflow-hidden pt-7 pb-4 px-4 sm:pt-10 sm:pb-6 sm:px-8"
                 style={{
                   background:
                     "linear-gradient(135deg, #1e3a8a 0%, #2563eb 30%, #4f46e5 65%, #6d28d9 100%)",
-                  borderRadius: "28px",
+                  borderRadius: "24px",
                   border: "1.5px solid rgba(147, 197, 253, 0.4)",
                   boxShadow:
                     "0 24px 60px rgba(37, 99, 235, 0.45), 0 0 0 1px rgba(255,255,255,0.05), inset 0 1px 0 rgba(255,255,255,0.25), inset 0 -1px 0 rgba(0,0,0,0.2)",
@@ -143,11 +152,11 @@ export function GamerPlanSection() {
                 />
 
                 {/* Conteúdo */}
-                <div className="relative flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 sm:gap-6">
+                <div className="relative flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-6">
                   {/* UP GAMER */}
-                  <div className="flex-1 sm:min-w-[180px]">
+                  <div className="sm:flex-1 sm:min-w-[180px]">
                     <h3
-                      className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-none tracking-tight"
+                      className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-none tracking-tight"
                       style={{
                         fontFamily: "system-ui, -apple-system, sans-serif",
                       }}
@@ -166,7 +175,7 @@ export function GamerPlanSection() {
 
                   {/* Card interno - Velocidade + Preço */}
                   <div
-                    className="relative px-4 sm:px-5 py-3 sm:py-4 rounded-2xl backdrop-blur-3xl self-stretch sm:self-auto"
+                    className="relative w-full sm:w-auto px-4 sm:px-5 py-3 sm:py-4 rounded-2xl backdrop-blur-3xl"
                     style={{
                       background:
                         "linear-gradient(135deg, rgba(255,255,255,0.32) 0%, rgba(255,255,255,0.14) 100%)",
@@ -177,41 +186,76 @@ export function GamerPlanSection() {
                       WebkitBackdropFilter: "blur(80px) saturate(1.8)",
                     }}
                   >
-                    <div className="flex items-baseline justify-end">
-                      <span
-                        className="text-4xl sm:text-5xl font-black text-white leading-none"
+                    {/* Mobile: speed e preço lado a lado preenchendo largura */}
+                    <div className="flex items-center justify-between sm:hidden">
+                      <div className="flex items-baseline">
+                        <span
+                          className="text-4xl font-black text-white leading-none"
+                          style={{ textShadow: "0 2px 6px rgba(0,0,0,0.3)" }}
+                        >
+                          1000
+                        </span>
+                        <span className="text-base font-bold text-blue-100 ml-1">
+                          mb
+                        </span>
+                      </div>
+                      <div
+                        className="h-10 w-px"
                         style={{
-                          textShadow: "0 2px 6px rgba(0,0,0,0.3)",
+                          background:
+                            "linear-gradient(180deg, transparent, rgba(219, 234, 254, 0.7), transparent)",
                         }}
-                      >
-                        1000
-                      </span>
-                      <span className="text-base sm:text-lg font-bold text-blue-100 ml-1.5">
-                        mb
-                      </span>
+                      />
+                      <div className="flex items-baseline">
+                        <span className="text-xs font-bold text-blue-100 mr-1">
+                          R$
+                        </span>
+                        <span
+                          className="text-3xl font-black text-white leading-none"
+                          style={{ textShadow: "0 2px 6px rgba(0,0,0,0.3)" }}
+                        >
+                          189
+                        </span>
+                        <span className="text-xl font-black text-white">
+                          ,90
+                        </span>
+                      </div>
                     </div>
-                    <div
-                      className="my-2 h-px"
-                      style={{
-                        background:
-                          "linear-gradient(90deg, transparent, rgba(219, 234, 254, 0.7), transparent)",
-                      }}
-                    />
-                    <div className="flex items-baseline justify-end">
-                      <span className="text-sm font-bold text-blue-100 mr-1">
-                        R$
-                      </span>
-                      <span
-                        className="text-3xl sm:text-4xl font-black text-white leading-none"
+
+                    {/* Desktop: empilhado com divider horizontal */}
+                    <div className="hidden sm:block">
+                      <div className="flex items-baseline justify-end">
+                        <span
+                          className="text-5xl font-black text-white leading-none"
+                          style={{ textShadow: "0 2px 6px rgba(0,0,0,0.3)" }}
+                        >
+                          1000
+                        </span>
+                        <span className="text-lg font-bold text-blue-100 ml-1.5">
+                          mb
+                        </span>
+                      </div>
+                      <div
+                        className="my-2 h-px"
                         style={{
-                          textShadow: "0 2px 6px rgba(0,0,0,0.3)",
+                          background:
+                            "linear-gradient(90deg, transparent, rgba(219, 234, 254, 0.7), transparent)",
                         }}
-                      >
-                        189
-                      </span>
-                      <span className="text-2xl sm:text-3xl font-black text-white">
-                        ,90
-                      </span>
+                      />
+                      <div className="flex items-baseline justify-end">
+                        <span className="text-sm font-bold text-blue-100 mr-1">
+                          R$
+                        </span>
+                        <span
+                          className="text-4xl font-black text-white leading-none"
+                          style={{ textShadow: "0 2px 6px rgba(0,0,0,0.3)" }}
+                        >
+                          189
+                        </span>
+                        <span className="text-3xl font-black text-white">
+                          ,90
+                        </span>
+                      </div>
                     </div>
                   </div>
                 </div>
