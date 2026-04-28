@@ -22,7 +22,7 @@ export function BusinessPlanSection() {
     <section
       className="relative overflow-hidden bg-[#0a0420] bg-no-repeat bg-cover bg-center lg:bg-right"
       style={{
-        backgroundImage: "url('/media/Man_holding_payment_202604271942.jpeg')",
+        backgroundImage: "url('/media/plano%20empresarial%20fibra%20optica.jpeg')",
       }}
     >
       {/* Overlay gradient azul-marinho com tom de sky-blue para diferenciar do violeta do gamer */}
