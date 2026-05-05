@@ -1,25 +1,25 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Zap, Shield, Globe, Users, Wifi, Rocket } from "lucide-react";
+import { Cable, Clock, Signal, Users, Wifi, Rocket } from "lucide-react";
 
 const highlights = [
   {
-    icon: Zap,
-    title: "Ultravelocidade",
-    subtitle: "Até 900MB",
-    color: "text-yellow-400",
-  },
-  {
-    icon: Shield,
-    title: "100% estável",
-    subtitle: "Fibra óptica",
+    icon: Cable,
+    title: "100% fibra óptica",
+    subtitle: "Direto até sua casa, garantindo velocidade real e estabilidade de conexão.",
     color: "text-blue-400",
   },
   {
-    icon: Globe,
-    title: "Ilimitada",
-    subtitle: "Sem franquia",
+    icon: Clock,
+    title: "Instalação em até 24 horas",
+    subtitle: "Processo rápido com agendamento flexível até para horários especiais.",
+    color: "text-yellow-400",
+  },
+  {
+    icon: Signal,
+    title: "Estabilidade de conexão",
+    subtitle: "Com os melhores equipamentos, garantindo a melhor performance.",
     color: "text-green-400",
   },
 ];

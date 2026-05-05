@@ -2,38 +2,23 @@
 
 import { motion } from "framer-motion";
 import {
-  Cable,
-  Clock,
   Router,
   Wrench,
   Heart,
   BadgePercent,
   Activity,
-  Signal,
   Server,
   Globe2,
 } from "lucide-react";
 
 type Feature = {
-  icon: typeof Cable;
+  icon: typeof Router;
   title: string;
   description: string;
   highlight?: boolean;
 };
 
 const features: Feature[] = [
-  {
-    icon: Cable,
-    title: "100% fibra óptica",
-    description:
-      "Direto até sua casa, garantindo velocidade real e estabilidade de conexão.",
-  },
-  {
-    icon: Clock,
-    title: "Instalação em até 24 horas",
-    description:
-      "Processo rápido com agendamento flexível até para horários especiais.",
-  },
   {
     icon: Router,
     title: "Super roteador Wi-Fi 5g e 6g",
@@ -64,12 +49,6 @@ const features: Feature[] = [
     title: "Rede monitorada",
     description:
       "Identificação e correção de problemas técnicos antes de atingir o cliente.",
-  },
-  {
-    icon: Signal,
-    title: "Estabilidade de conexão",
-    description:
-      "Com os melhores equipamentos, garantindo a melhor performance.",
   },
   {
     icon: Server,
