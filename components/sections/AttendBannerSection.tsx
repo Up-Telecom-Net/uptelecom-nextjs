@@ -123,7 +123,7 @@ export function AttendBannerSection() {
               </div>
               
               <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-6">
-                Assine Agora e Conecte-se ao Futuro!
+                Assine agora e conecte-se ao futuro!
               </h2>
               
               <p className="text-xl text-white/90 mb-8 leading-relaxed">

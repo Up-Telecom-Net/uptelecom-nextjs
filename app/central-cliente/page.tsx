@@ -1,5 +1,4 @@
-import { UserCircle } from "lucide-react";
-import Link from "next/link";
+import { UserCircle, LogIn } from "lucide-react";
 
 export const metadata = {
   title: "Central do Cliente | Up Telecom",
@@ -15,23 +14,26 @@ export default function CentralClientePage() {
             <UserCircle className="w-10 h-10 text-white" />
           </div>
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-            Central do Cliente
+            Central do cliente
           </h1>
           <p className="text-xl text-gray-600 mb-12">
             Acesse todas as informações de usuário na área exclusiva de clientes
           </p>
-          
+
           <div className="bg-white rounded-2xl p-8 shadow-lg border border-gray-200">
             <p className="text-gray-700 mb-6">
-              Em breve você poderá acessar sua área exclusiva de cliente para gerenciar sua conta, 
-              visualizar faturas, histórico de pagamentos e muito mais.
+              Acesse sua área exclusiva para gerenciar sua conta, visualizar faturas,
+              histórico de pagamentos e muito mais.
             </p>
-            <Link
-              href="/contato"
+            <a
+              href="https://sistema.uptelecomnt.com.br/accounts/central/login"
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center space-x-2 px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-500 text-white rounded-lg font-semibold hover:shadow-lg hover:scale-105 transition-all duration-300"
             >
-              <span>Entre em Contato</span>
-            </Link>
+              <LogIn className="w-5 h-5" />
+              <span>Acessar Central do Cliente</span>
+            </a>
           </div>
         </div>
       </div>

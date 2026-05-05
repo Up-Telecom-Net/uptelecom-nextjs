@@ -67,7 +67,7 @@ export default function SuportePage() {
             <div className="flex items-start space-x-4 mb-6">
               <Clock className="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" />
               <div>
-                <h3 className="font-semibold text-gray-900 mb-2">Horário de Atendimento</h3>
+                <h3 className="font-semibold text-gray-900 mb-2">Horário de atendimento</h3>
                 <p className="text-gray-600">24 horas por dia, 7 dias por semana</p>
               </div>
             </div>
@@ -88,7 +88,7 @@ export default function SuportePage() {
             <div className="flex items-start space-x-4">
               <MessageCircle className="w-6 h-6 text-blue-600 mt-1 flex-shrink-0" />
               <div>
-                <h3 className="font-semibold text-gray-900 mb-2">Tipos de Suporte</h3>
+                <h3 className="font-semibold text-gray-900 mb-2">Tipos de suporte</h3>
                 <ul className="text-gray-600 space-y-1">
                   <li>• Problemas técnicos de conexão</li>
                   <li>• Instalação e configuração</li>

@@ -15,7 +15,7 @@ export function ContatoContent() {
           className="text-center mb-16"
         >
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-            Entre em Contato
+            Entre em contato
           </h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
             Estamos prontos para atender você. Entre em contato através dos canais abaixo
@@ -31,7 +31,7 @@ export function ContatoContent() {
               transition={{ duration: 0.5 }}
               className="bg-white rounded-2xl p-8 shadow-lg"
             >
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Informações de Contato</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">Informações de contato</h2>
               
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
@@ -106,7 +106,7 @@ export function ContatoContent() {
             transition={{ duration: 0.5 }}
             className="bg-white rounded-2xl p-8 shadow-lg"
           >
-            <h2 className="text-2xl font-bold text-gray-900 mb-6">Envie uma Mensagem</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-6">Envie uma mensagem</h2>
             <form className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">

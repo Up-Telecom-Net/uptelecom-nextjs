@@ -41,7 +41,7 @@ export function ServicesSection() {
             Provedora de internet de confiança
           </p>
           <p className="leading-[1.7] text-[#222] text-[16px] max-w-[678px] whitespace-pre-wrap">
-            A Up Telecomnet entrega internet fibra óptica de alta performance em Florianópolis, com estabilidade, baixa latência e suporte local que resolve, para que a sua casa ou a sua empresa tenha Wi-Fi de qualidade para streaming, jogos on-line, trabalho remoto e casa inteligente, sempre sem franquia e com roteador em comodato.
+            A Up Telecom entrega internet fibra óptica de alta performance em Florianópolis, com estabilidade, baixa latência e suporte local que resolve. Wi-Fi de qualidade para a sua casa ou empresa, ideal para streaming, jogos on-line, trabalho remoto e casa inteligente — sempre sem franquia e com roteador em comodato.
           </p>
         </motion.div>
 

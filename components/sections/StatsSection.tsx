@@ -7,21 +7,21 @@ const stats = [
   {
     icon: Users,
     value: "3000+",
-    label: "Clientes Satisfeitos",
+    label: "Clientes satisfeitos",
     gradient: "from-blue-500 to-blue-600",
     shadow: "shadow-blue-500/50"
   },
   {
     icon: Wifi,
     value: "10+",
-    label: "Bairros Atendidos",
+    label: "Bairros atendidos",
     gradient: "from-green-500 to-green-600",
     shadow: "shadow-green-500/50"
   },
   {
     icon: Award,
     value: "10",
-    label: "Anos de Experiência",
+    label: "Anos de experiência",
     gradient: "from-purple-500 via-pink-500 to-orange-500",
     shadow: "shadow-pink-500/50"
   },

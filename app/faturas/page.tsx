@@ -15,7 +15,7 @@ export default function FaturasPage() {
             <FileText className="w-10 h-10 text-white" />
           </div>
           <h1 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-            Up-telecom Faturas
+            Up-telecom faturas
           </h1>
           <p className="text-xl text-gray-600 mb-12">
             Perdeu seu carnê de pagamento? Não se preocupe. Baixe agora sua 2ª via de sua fatura.

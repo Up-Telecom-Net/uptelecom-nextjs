@@ -7,6 +7,11 @@ const footerLinks = {
     { href: "/sobre", label: "Sobre Nós" },
     { href: "/cobertura", label: "Área de Cobertura" },
     { href: "/contato", label: "Contato" },
+    {
+      href: "/PDF%20CONTRATO/Contrato%20Geral%20UP-Telecom%20assinado.pdf",
+      label: "Contrato de serviços",
+      external: true,
+    },
   ],
   servicos: [
     { href: "/planos", label: "Planos Fibra Óptica" },
@@ -73,12 +78,23 @@ export function Footer() {
             <ul className="space-y-2">
               {footerLinks.empresa.map((link) => (
                 <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-sm hover:text-blue-400 transition-colors"
-                  >
-                    {link.label}
-                  </Link>
+                  {"external" in link && link.external ? (
+                    <a
+                      href={link.href}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-sm hover:text-blue-400 transition-colors"
+                    >
+                      {link.label}
+                    </a>
+                  ) : (
+                    <Link
+                      href={link.href}
+                      className="text-sm hover:text-blue-400 transition-colors"
+                    >
+                      {link.label}
+                    </Link>
+                  )}
                 </li>
               ))}
             </ul>

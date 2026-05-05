@@ -36,7 +36,7 @@ export function SobreContent() {
               transition={{ duration: 0.8 }}
               className="prose prose-lg max-w-none"
             >
-              <h2 className="text-3xl font-bold text-gray-900 mb-6">Nossa História</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-6">Nossa história</h2>
               <p className="text-gray-700 leading-relaxed mb-6">
                 Nossa empresa investe tanto em tecnologia com cabeamentos e equipamentos de ótima qualidade quanto em funcionários que são capacitados para a realização de serviços solicitados prestando um atendimento e suporte funcional e de altíssima competência.
               </p>
@@ -58,7 +58,7 @@ export function SobreContent() {
             transition={{ duration: 0.8 }}
             className="text-center mb-16"
           >
-            <h2 className="text-4xl font-bold text-gray-900 mb-4">Nossos Valores</h2>
+            <h2 className="text-4xl font-bold text-gray-900 mb-4">Nossos valores</h2>
             <p className="text-xl text-gray-600 max-w-2xl mx-auto">
               O que nos move todos os dias
             </p>
@@ -68,22 +68,22 @@ export function SobreContent() {
             {[
               {
                 icon: Target,
-                title: "Foco no Cliente",
+                title: "Foco no cliente",
                 description: "Priorizamos a satisfação e necessidades dos nossos clientes em tudo que fazemos.",
               },
               {
                 icon: TrendingUp,
-                title: "Inovação Contínua",
+                title: "Inovação contínua",
                 description: "Investimos constantemente em tecnologia de ponta para oferecer o melhor serviço.",
               },
               {
                 icon: Users,
-                title: "Equipe Capacitada",
+                title: "Equipe capacitada",
                 description: "Funcionários treinados e comprometidos com a excelência no atendimento.",
               },
               {
                 icon: Award,
-                title: "Qualidade Garantida",
+                title: "Qualidade garantida",
                 description: "Equipamentos de primeira linha e infraestrutura robusta para máxima estabilidade.",
               },
             ].map((value, index) => (

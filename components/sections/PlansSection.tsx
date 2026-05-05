@@ -95,7 +95,7 @@ export function PlansSection() {
           >
             <Zap className="w-6 h-6 sm:w-7 sm:h-7 text-blue-400 shrink-0" />
             <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white">
-              Internet Fibra Óptica
+              Internet fibra óptica
             </h2>
           </motion.div>
           <p className="text-base sm:text-lg md:text-xl text-blue-100/80 max-w-2xl mx-auto px-4">

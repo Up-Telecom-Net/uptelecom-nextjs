@@ -15,6 +15,8 @@ const neighborhoods = [
   "SERRINHA",
   "CARVOEIRA",
   "PANTANAL",
+  "MONTE VERDE",
+  "SACO GRANDE",
 ];
 
 export function CoverageSection() {
@@ -86,11 +88,11 @@ export function CoverageSection() {
           >
             <MapPin className="w-6 h-6 sm:w-7 sm:h-7 text-blue-400 shrink-0" />
             <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-black text-white">
-              Conheça os Bairros que Atendemos
+              Conheça os bairros que atendemos
             </h2>
           </motion.div>
           <p className="text-base sm:text-lg md:text-xl text-blue-100/80 max-w-2xl mx-auto px-4">
-            Estamos expandindo nossa cobertura em Florianópolis para levar internet de qualidade para mais lugares
+            Atendemos Florianópolis com internet fibra óptica de qualidade e estamos expandindo nossa cobertura para mais bairros
           </p>
         </motion.div>
 
@@ -161,7 +163,7 @@ export function CoverageSection() {
                         textShadow: "0 2px 8px rgba(0,0,0,0.3)",
                       }}
                     >
-                      Bairros Atendidos
+                      Bairros atendidos
                     </h3>
                     <span className="text-xs sm:text-sm text-blue-200/80 font-medium">
                       {neighborhoods.length} regiões em Florianópolis
@@ -318,7 +320,7 @@ export function CoverageSection() {
                     }}
                   >
                     <WhatsAppIcon size={18} className="text-white shrink-0" />
-                    <span className="leading-tight">Verificar Cobertura no WhatsApp</span>
+                    <span className="leading-tight">Verificar cobertura no WhatsApp</span>
                     <ArrowRight className="w-4 h-4 sm:w-5 sm:h-5 shrink-0 group-hover:translate-x-1 transition-transform" />
                   </a>
                 </div>

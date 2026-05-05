@@ -205,20 +205,6 @@ export function PhonePlanSection() {
                       Ligações ilimitadas para fixos e celulares
                     </span>
                   </li>
-                  <li className="flex items-center gap-3 text-blue-50">
-                    <div
-                      className="flex items-center justify-center w-7 h-7 rounded-full shrink-0"
-                      style={{
-                        background: "rgba(255,255,255,0.15)",
-                        border: "1px solid rgba(255,255,255,0.3)",
-                      }}
-                    >
-                      <PhoneCall className="w-3.5 h-3.5 text-blue-200" />
-                    </div>
-                    <span className="text-sm sm:text-base font-medium">
-                      Aparelho em comodato incluso
-                    </span>
-                  </li>
                 </ul>
               </div>
 

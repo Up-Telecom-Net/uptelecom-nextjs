@@ -15,7 +15,7 @@ export function CTASection() {
           className="max-w-4xl mx-auto text-center"
         >
           <h2 className="text-4xl sm:text-5xl lg:text-6xl font-bold text-white mb-6">
-            Pronto para Conectar?
+            Pronto para conectar?
           </h2>
           <p className="text-xl sm:text-2xl text-white/90 mb-12 max-w-2xl mx-auto">
             Entre em contato com nossa central e descubra o plano ideal para você

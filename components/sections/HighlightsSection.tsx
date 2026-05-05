@@ -6,20 +6,20 @@ import { Zap, Shield, Globe, Users, Wifi, Rocket } from "lucide-react";
 const highlights = [
   {
     icon: Zap,
-    title: "Ultra Velocidade",
+    title: "Ultravelocidade",
     subtitle: "Até 900MB",
     color: "text-yellow-400",
   },
   {
     icon: Shield,
-    title: "100% Estável",
-    subtitle: "Fibra Óptica",
+    title: "100% estável",
+    subtitle: "Fibra óptica",
     color: "text-blue-400",
   },
   {
     icon: Globe,
     title: "Ilimitada",
-    subtitle: "Sem Franquia",
+    subtitle: "Sem franquia",
     color: "text-green-400",
   },
 ];
@@ -43,22 +43,6 @@ export function HighlightsSection() {
   return (
     <section className="py-20 bg-gradient-to-b from-blue-50 via-white to-blue-50 relative overflow-hidden">
       <div className="container mx-auto px-[30px] sm:px-8 lg:px-12 relative z-10">
-        {/* Main Highlights */}
-        <motion.div
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.8 }}
-          className="text-center mb-16"
-        >
-          <h2 className="text-4xl sm:text-5xl font-bold text-gray-900 mb-4">
-            Por que Escolher a <span className="text-blue-600">Up Telecom</span>?
-          </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Tecnologia de ponta que transforma vidas
-          </p>
-        </motion.div>
-
         <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 mb-16">
           {highlights.map((highlight, index) => (
             <motion.div

@@ -2,17 +2,20 @@
 
 import { motion } from "framer-motion";
 import {
-  Headphones,
-  Wifi,
-  Users,
+  Cable,
+  Clock,
+  Router,
+  Wrench,
   Heart,
-  Award,
+  BadgePercent,
+  Activity,
+  Signal,
+  Server,
   Globe2,
-  Network,
 } from "lucide-react";
 
 type Feature = {
-  icon: typeof Headphones;
+  icon: typeof Cable;
   title: string;
   description: string;
   highlight?: boolean;
@@ -20,41 +23,59 @@ type Feature = {
 
 const features: Feature[] = [
   {
-    icon: Headphones,
-    title: "Suporte Especializado",
+    icon: Cable,
+    title: "100% fibra óptica",
     description:
-      "Equipe capacitada para realização de serviços solicitados prestando um atendimento e suporte funcional e de altíssima competência.",
+      "Direto até sua casa, garantindo velocidade real e estabilidade de conexão.",
   },
   {
-    icon: Wifi,
-    title: "Cobertura Ampliada",
+    icon: Clock,
+    title: "Instalação em até 24 horas",
     description:
-      "Atendemos diversos bairros e regiões com internet fibra óptica, levando conectividade de qualidade para todos os lugares.",
+      "Processo rápido com agendamento flexível até para horários especiais.",
   },
   {
-    icon: Users,
-    title: "Clientes Satisfeitos",
+    icon: Router,
+    title: "Super roteador Wi-Fi 5g e 6g",
     description:
-      "Tão importante quanto conseguir novos clientes é manter os clientes satisfeitos. Priorizamos qualidade e rapidez.",
-  },
-  {
-    icon: Heart,
-    title: "Atendimento Humanizado",
-    description:
-      "Valorizamos cada cliente como parte da nossa família. Seu bem-estar e satisfação são nossa prioridade.",
-  },
-  {
-    icon: Network,
-    title: "Tecnologia de Ponta",
-    description:
-      "Infraestrutura moderna e equipamentos de última geração garantindo a melhor experiência de conexão.",
+      "Trabalhamos com equipamentos de última geração, unindo a tecnologia da fibra óptica com aparelhos de distribuição mais avançados disponíveis no mercado.",
     highlight: true,
   },
   {
-    icon: Award,
-    title: "Melhor Custo-Benefício",
+    icon: Wrench,
+    title: "Suporte técnico eficiente",
     description:
-      "Planos acessíveis com a melhor relação qualidade-preço do mercado, sem taxas escondidas ou surpresas na fatura.",
+      "Quando você precisar, pode ficar tranquilo que nós vamos te ajudar. Suporte remoto e presencial com compromisso real com o cliente.",
+  },
+  {
+    icon: Heart,
+    title: "Atendimento humanizado",
+    description:
+      "Nada de ligações intermináveis. Aqui você fala com gente de verdade para resolver qualquer problema de forma ágil, prestativa e com empatia.",
+  },
+  {
+    icon: BadgePercent,
+    title: "Planos flexíveis com preço justo",
+    description:
+      "Planos com ótimo custo-benefício, sem taxas escondidas. Planos para diferentes perfis.",
+  },
+  {
+    icon: Activity,
+    title: "Rede monitorada",
+    description:
+      "Identificação e correção de problemas técnicos antes de atingir o cliente.",
+  },
+  {
+    icon: Signal,
+    title: "Estabilidade de conexão",
+    description:
+      "Com os melhores equipamentos, garantindo a melhor performance.",
+  },
+  {
+    icon: Server,
+    title: "Infraestrutura própria",
+    description:
+      "Infraestrutura própria com rede dedicada, sem a burocracia de grandes provedores.",
   },
 ];
 
@@ -132,7 +153,7 @@ export function FeaturesSection() {
             <Globe2 className="w-10 h-10 sm:w-12 sm:h-12 text-blue-400" />
           </motion.div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-black text-white mb-3 sm:mb-4 px-4">
-            Por que Escolher a Up Telecom?
+            Por que escolher a Up Telecom?
           </h2>
           <p className="text-base sm:text-lg md:text-xl text-blue-100/80 max-w-2xl mx-auto px-4">
             Descubra por que somos a melhor escolha para sua conexão em Florianópolis.
