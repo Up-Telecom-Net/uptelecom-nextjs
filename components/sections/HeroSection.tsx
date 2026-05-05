@@ -166,7 +166,7 @@ export function HeroSection() {
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Link>
             <a
-              href="https://wa.me/5548996891962"
+              href="https://wa.me/554835000962?text=Ol%C3%A1%21%20Quero%20assinar%20um%20plano."
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center space-x-2 px-8 py-4 bg-white text-blue-600 rounded-lg font-semibold text-lg hover:bg-blue-50 transition-colors duration-300"

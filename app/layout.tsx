@@ -133,23 +133,23 @@ const localBusinessSchema = {
     { "@type": "Neighborhood", name: "Monte Verde" },
     { "@type": "Neighborhood", name: "Saco Grande" },
   ],
-  openingHoursSpecification: {
-    "@type": "OpeningHoursSpecification",
-    dayOfWeek: [
-      "Monday",
-      "Tuesday",
-      "Wednesday",
-      "Thursday",
-      "Friday",
-      "Saturday",
-      "Sunday",
-    ],
-    opens: "00:00",
-    closes: "23:59",
-  },
+  openingHoursSpecification: [
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      opens: "08:30",
+      closes: "18:00",
+    },
+    {
+      "@type": "OpeningHoursSpecification",
+      dayOfWeek: "Saturday",
+      opens: "08:00",
+      closes: "12:00",
+    },
+  ],
   sameAs: [
     "https://facebook.com/uptelecom",
-    "https://instagram.com/uptelecom",
+    "https://www.instagram.com/uptelecomfibra/",
     "https://linkedin.com/company/uptelecom",
   ],
 };

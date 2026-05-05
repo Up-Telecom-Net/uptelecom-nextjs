@@ -109,8 +109,7 @@ export function CoverageSection() {
             <div
               className="relative overflow-hidden p-6 sm:p-8 h-full"
               style={{
-                background:
-                  "linear-gradient(135deg, #1e3a8a 0%, #1e40af 35%, #3730a3 70%, #4338ca 100%)",
+                background: "#1d4ed8",
                 borderRadius: "28px",
                 border: "1.5px solid rgba(147, 197, 253, 0.4)",
                 boxShadow:
@@ -214,12 +213,11 @@ export function CoverageSection() {
             <div
               className="relative overflow-hidden p-6 sm:p-8 h-full flex flex-col"
               style={{
-                background:
-                  "linear-gradient(135deg, #1e3a8a 0%, #2563eb 25%, #4f46e5 60%, #7c3aed 100%)",
+                background: "#1d4ed8",
                 borderRadius: "28px",
-                border: "1.5px solid rgba(167, 139, 250, 0.5)",
+                border: "1.5px solid rgba(147, 197, 253, 0.5)",
                 boxShadow:
-                  "0 28px 70px rgba(124, 58, 237, 0.45), 0 0 0 1px rgba(255,255,255,0.05), inset 0 1px 0 rgba(255,255,255,0.25)",
+                  "0 28px 70px rgba(37, 99, 235, 0.45), 0 0 0 1px rgba(255,255,255,0.05), inset 0 1px 0 rgba(255,255,255,0.25)",
               }}
             >
               {/* Reflexo no topo */}
@@ -244,7 +242,7 @@ export function CoverageSection() {
                 className="absolute -bottom-20 -left-20 w-72 h-72 rounded-full pointer-events-none opacity-50"
                 style={{
                   background:
-                    "radial-gradient(circle, rgba(167, 139, 250, 0.6) 0%, transparent 70%)",
+                    "radial-gradient(circle, rgba(96, 165, 250, 0.6) 0%, transparent 70%)",
                   filter: "blur(50px)",
                 }}
               />

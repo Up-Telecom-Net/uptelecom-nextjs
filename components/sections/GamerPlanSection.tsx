@@ -287,7 +287,7 @@ export function GamerPlanSection() {
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <a
-                href="https://wa.me/5548996891962?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20plano%20UP%20GAMER%20de%201000MB."
+                href="https://wa.me/554835000962?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20plano%20UP%20GAMER%20de%201000MB."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center justify-center gap-2 sm:gap-3 px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl font-bold text-base sm:text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-violet-500/50"

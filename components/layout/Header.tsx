@@ -161,7 +161,7 @@ export function Header() {
           {/* Mobile (< md): apenas Assinar Agora + Central do Cliente */}
           <div className="flex md:hidden items-center justify-between gap-2 h-full">
             <a
-              href="https://wa.me/5548996891962?text=Ol%C3%A1%21%20Quero%20assinar%20um%20plano."
+              href="https://wa.me/554835000962?text=Ol%C3%A1%21%20Quero%20assinar%20um%20plano."
               target="_blank"
               rel="noopener noreferrer"
               className="flex items-center justify-center gap-1.5 flex-1 h-7 px-3 rounded-full bg-white text-blue-600 text-xs font-bold transition-colors hover:bg-blue-50"

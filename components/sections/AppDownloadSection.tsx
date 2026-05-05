@@ -10,7 +10,7 @@ const IOS_URL = "https://apps.apple.com/us/app/up-telecom/id1593644411";
 const features = [
   { icon: FileText, text: "2ª via de fatura na palma da mão" },
   { icon: Wifi, text: "Acompanhe seu plano e consumo" },
-  { icon: MessageCircle, text: "Abra chamados de suporte 24/7" },
+  { icon: MessageCircle, text: "Abra chamados de suporte com a nossa equipe" },
 ];
 
 export function AppDownloadSection() {

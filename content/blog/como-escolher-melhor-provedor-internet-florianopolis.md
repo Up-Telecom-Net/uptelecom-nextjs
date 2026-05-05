@@ -34,7 +34,7 @@ A maior reclamação contra grandes operadoras quase sempre é o suporte. Atendi
 
 Antes de assinar, pergunte:
 
-1. O suporte funciona 24 horas, 7 dias por semana?
+1. Qual o horário de atendimento do suporte?
 2. Existe atendimento presencial caso precise de visita técnica?
 3. Em quanto tempo a equipe se compromete a atender chamados?
 

@@ -2,7 +2,6 @@
 
 import { motion } from "framer-motion";
 import { Zap, Wifi, Download, Upload, Infinity as InfinityIcon } from "lucide-react";
-import Link from "next/link";
 
 type Plan = {
   name: string;
@@ -299,8 +298,12 @@ export function PlansSection() {
                 </ul>
 
                 {/* CTA */}
-                <Link
-                  href="/contato"
+                <a
+                  href={`https://wa.me/554835000962?text=${encodeURIComponent(
+                    `Olá! Quero assinar o plano UP ${plan.name} de ${plan.speed}MB.`,
+                  )}`}
+                  target="_blank"
+                  rel="noopener noreferrer"
                   className="relative block w-full text-center py-3.5 rounded-xl font-bold text-base transition-all duration-300 hover:scale-105"
                   style={{
                     background: plan.popular
@@ -315,8 +318,8 @@ export function PlansSection() {
                       : "1px solid rgba(147, 197, 253, 0.4)",
                   }}
                 >
-                  Assine Agora
-                </Link>
+                  Assine agora
+                </a>
               </div>
             </motion.div>
           ))}

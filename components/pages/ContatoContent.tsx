@@ -91,8 +91,9 @@ export function ContatoContent() {
                     <Clock className="w-6 h-6 text-white" />
                   </div>
                   <div>
-                    <h3 className="font-semibold text-gray-900 mb-1">Atendimento</h3>
-                    <p className="text-gray-600">24 horas por dia, 7 dias por semana</p>
+                    <h3 className="font-semibold text-gray-900 mb-1">Horário de atendimento</h3>
+                    <p className="text-gray-600">De segunda a sexta-feira, atendemos das 8h30 às 18h.</p>
+                    <p className="text-gray-600">Aos sábados, das 8h às 12h.</p>
                   </div>
                 </div>
               </div>

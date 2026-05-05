@@ -134,7 +134,7 @@ export function AttendBannerSection() {
               {/* CTA Button */}
               <div className="flex items-start">
                 <a
-                  href="https://wa.me/5548996891962"
+                  href="https://wa.me/554835000962?text=Ol%C3%A1%21%20Quero%20assinar%20um%20plano."
                   target="_blank"
                   rel="noopener noreferrer"
                   className="group flex items-center justify-center space-x-3 px-8 py-4 bg-white text-blue-600 rounded-xl font-semibold text-lg hover:shadow-2xl hover:scale-105 transition-all duration-300"
@@ -156,7 +156,7 @@ export function AttendBannerSection() {
             >
               {/* WhatsApp GIF Animado */}
               <motion.a
-                href="https://wa.me/5548996891962"
+                href="https://wa.me/554835000962?text=Ol%C3%A1%21%20Quero%20assinar%20um%20plano."
                 target="_blank"
                 rel="noopener noreferrer"
                 whileHover={{ scale: 1.05, y: -5 }}

@@ -248,7 +248,7 @@ export function PhonePlanSection() {
                 {/* CTAs */}
                 <div className="flex flex-col sm:flex-row gap-3 w-full md:w-auto">
                   <a
-                    href="https://wa.me/5548996891962?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20plano%20de%20Telefone%20Fixo."
+                    href="https://wa.me/554835000962?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20plano%20de%20Telefone%20Fixo."
                     target="_blank"
                     rel="noopener noreferrer"
                     className="group inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl font-bold text-sm sm:text-base transition-all duration-300 hover:scale-105"
