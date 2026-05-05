@@ -16,6 +16,7 @@ const footerLinks = {
   servicos: [
     { href: "/planos", label: "Planos Fibra Óptica" },
     { href: "/suporte", label: "Suporte Técnico" },
+    { href: "/blog", label: "Blog" },
   ],
   cliente: [
     { href: "/central-cliente", label: "Central do Cliente" },
@@ -34,7 +35,7 @@ export function Footer() {
             <div className="flex items-center">
               <img
                 src="/media/logo/logo_uptelelcom_branca.png"
-                alt="Up Telecom"
+                alt="Up Telecom - Provedor de internet fibra óptica em Florianópolis"
                 className="h-10 w-auto"
               />
             </div>

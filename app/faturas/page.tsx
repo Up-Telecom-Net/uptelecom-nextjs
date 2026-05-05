@@ -2,8 +2,21 @@ import { FileText, Download } from "lucide-react";
 import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
 
 export const metadata = {
-  title: "2ª Via de Fatura | Up Telecom",
-  description: "Baixe agora sua 2ª via de fatura da Up Telecom. Perdeu seu carnê de pagamento? Não se preocupe.",
+  title: "2ª via de fatura Up Telecom",
+  description:
+    "Baixe a 2ª via da sua fatura da Up Telecom. Atendimento pelo WhatsApp (48) 3500-0962 e (48) 99689-1962 ou e-mail contato@uptelecomnet.com.br.",
+  keywords: [
+    "segunda via fatura up telecom",
+    "2 via fatura internet florianópolis",
+    "boleto up telecom",
+    "fatura internet florianópolis",
+  ],
+  alternates: { canonical: "/faturas" },
+  openGraph: {
+    title: "2ª via de fatura - Up Telecom",
+    description: "Baixe a 2ª via da sua fatura da Up Telecom.",
+    url: "https://uptelecomnet.com.br/faturas",
+  },
 };
 
 export default function FaturasPage() {

@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react";
 import Link from "next/link";
-import { Menu, X, Wifi, Phone, ChevronDown, UserCircle, Gauge, MapPin, Users, Smartphone, Gift, LogIn, Zap, Home, FileText, ArrowRight, Package, Map, Info, Mail, Search } from "lucide-react";
+import { Menu, X, Wifi, Phone, ChevronDown, UserCircle, Gauge, MapPin, Users, Smartphone, Gift, LogIn, Zap, Home, FileText, ArrowRight, Package, Map, Info, Mail, Search, BookOpen } from "lucide-react";
 import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
 import { motion, AnimatePresence } from "framer-motion";
 import { cn } from "@/lib/utils";
@@ -66,6 +66,12 @@ const servicesItems = [
     label: "Indique e ganhe",
     href: "/indique-ganhe",
     description: "Indique amigos e ganhe",
+  },
+  {
+    icon: BookOpen,
+    label: "Blog",
+    href: "/blog",
+    description: "Dicas e novidades",
   },
 ];
 
@@ -193,7 +199,7 @@ export function Header() {
           <Link href="/" className="flex items-center group">
             <img
               src="/media/logo/logo_uptelelcom.png"
-              alt="Up Telecom"
+              alt="Up Telecom - Internet fibra óptica em Florianópolis"
               className="h-12 w-auto"
             />
           </Link>

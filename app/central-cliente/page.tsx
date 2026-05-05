@@ -1,8 +1,21 @@
 import { UserCircle, LogIn } from "lucide-react";
 
 export const metadata = {
-  title: "Central do Cliente | Up Telecom",
-  description: "Acesse todas as informações de usuário na área exclusiva de clientes da Up Telecom.",
+  title: "Central do cliente Up Telecom",
+  description:
+    "Acesse a central do cliente Up Telecom para consultar faturas, gerenciar sua conta e acompanhar o seu plano de internet em Florianópolis.",
+  keywords: [
+    "central do cliente up telecom",
+    "área do cliente up telecom",
+    "minha conta up telecom",
+    "acesso cliente internet florianópolis",
+  ],
+  alternates: { canonical: "/central-cliente" },
+  openGraph: {
+    title: "Central do cliente - Up Telecom",
+    description: "Área exclusiva para clientes Up Telecom.",
+    url: "https://uptelecomnet.com.br/central-cliente",
+  },
 };
 
 export default function CentralClientePage() {

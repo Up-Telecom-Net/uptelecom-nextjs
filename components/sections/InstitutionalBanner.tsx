@@ -71,9 +71,9 @@ export function InstitutionalBanner() {
                   Empresa homologada pela
                 </span>
                 <img
-                  src="/media/anatel-51425.svg"
-                  alt="ANATEL"
-                  className="h-8 sm:h-10 w-auto brightness-0 invert"
+                  src="/media/Anatel_Logo.svg.png"
+                  alt="Up Telecom homologada pela ANATEL"
+                  className="h-10 sm:h-12 w-auto"
                 />
               </div>
               <a

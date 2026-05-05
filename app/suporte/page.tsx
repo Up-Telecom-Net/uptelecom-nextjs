@@ -2,8 +2,23 @@ import { Headphones, Phone, Mail, Clock, MessageCircle } from "lucide-react";
 import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
 
 export const metadata = {
-  title: "Suporte Técnico | Up Telecom",
-  description: "Problemas técnicos? Entre em contato com o suporte da Up Telecom. (48) 3500-0962 ou (48) 99689-1962",
+  title: "Suporte técnico Up Telecom em Florianópolis",
+  description:
+    "Suporte técnico da Up Telecom 24 horas, 7 dias por semana. Atendimento pelo WhatsApp (48) 3500-0962 ou (48) 99689-1962 para problemas de conexão, instalação e dúvidas sobre planos.",
+  keywords: [
+    "suporte técnico florianópolis",
+    "suporte up telecom",
+    "problema internet florianópolis",
+    "atendimento técnico internet",
+    "suporte 24 horas internet",
+  ],
+  alternates: { canonical: "/suporte" },
+  openGraph: {
+    title: "Suporte técnico - Up Telecom",
+    description:
+      "Suporte técnico 24 horas para clientes Up Telecom em Florianópolis.",
+    url: "https://uptelecomnet.com.br/suporte",
+  },
 };
 
 export default function SuportePage() {
