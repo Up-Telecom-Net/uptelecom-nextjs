@@ -12,7 +12,7 @@ const highlights = [
   },
   {
     icon: Clock,
-    title: "Instalação em até 24 horas",
+    title: "Instalação rápida",
     subtitle: "Processo rápido com agendamento flexível até para horários especiais.",
     color: "text-yellow-400",
   },
