@@ -71,6 +71,16 @@ export function Footer() {
                 <Linkedin className="w-5 h-5" />
               </a>
             </div>
+            <div className="pt-2">
+              <span className="block text-xs text-gray-400 mb-2">
+                Empresa homologada pela
+              </span>
+              <img
+                src="/media/Anatel-logo-white-1024x459-2.png"
+                alt="Up Telecom homologada pela ANATEL"
+                className="h-10 w-auto"
+              />
+            </div>
           </div>
 
           {/* Empresa */}

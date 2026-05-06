@@ -3,7 +3,6 @@ import { Inter, Rubik } from "next/font/google";
 import "./globals.css";
 import { Header } from "@/components/layout/Header";
 import { Footer } from "@/components/layout/Footer";
-import { InstitutionalBanner } from "@/components/sections/InstitutionalBanner";
 
 const inter = Inter({ subsets: ["latin"] });
 const rubik = Rubik({ subsets: ["latin"], variable: "--font-rubik" });
@@ -168,7 +167,6 @@ export default function RootLayout({
         />
         <Header />
         <main className="min-h-screen pt-21">{children}</main>
-        <InstitutionalBanner />
         <Footer />
       </body>
     </html>
