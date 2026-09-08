@@ -1,36 +1,39 @@
 "use client";
 
 import { motion } from "framer-motion";
-import { Zap, Wifi, Download, Upload, Infinity as InfinityIcon } from "lucide-react";
+import Image from "next/image";
+import { Zap } from "lucide-react";
 
 type Plan = {
   name: string;
-  price: string;
-  speed: string;
-  upload: string;
+  image: string;
+  alt: string;
+  whatsappMessage: string;
   popular: boolean;
 };
 
+// Artes em public/PLANOS (508x907, fundo transparente). O preço, a velocidade e
+// os benefícios estão na própria arte; o alt replica o conteúdo para acessibilidade/SEO.
 const fiberPlans: Plan[] = [
   {
-    name: "Básico",
-    price: "104,99",
-    speed: "550",
-    upload: "550",
+    name: "600 Mega",
+    image: "/PLANOS/600MEGA.png",
+    alt: "Plano 600 Mega: internet para a família toda, apps inclusos (+Q Nutri, E+ e mais), roteador incluso via comodato, R$ 109,90 por mês",
+    whatsappMessage: "Olá! Quero assinar o plano de 600 Mega.",
     popular: false,
   },
   {
-    name: "Premium",
-    price: "129,99",
-    speed: "700",
-    upload: "700",
+    name: "700 Mega",
+    image: "/PLANOS/700MEGA.png",
+    alt: "Plano 700 Mega: navegue sem travar, HBO Max, Deezer e Disney+ inclusos, roteador incluso via comodato, R$ 119,90 por mês",
+    whatsappMessage: "Olá! Quero assinar o plano de 700 Mega.",
     popular: true,
   },
   {
-    name: "Extreme",
-    price: "149,99",
-    speed: "900",
-    upload: "900",
+    name: "Plano Gamer",
+    image: "/PLANOS/PLANOGAMER.png",
+    alt: "Plano Gamer com ExitLag: mais estabilidade nos jogos, roteador incluso via comodato, R$ 169,90 por mês",
+    whatsappMessage: "Olá! Quero assinar o Plano Gamer.",
     popular: false,
   },
 ];
@@ -106,7 +109,7 @@ export function PlansSection() {
         <div className="grid grid-cols-1 lg:grid-cols-3 gap-8 lg:gap-8 mb-12 max-w-md lg:max-w-none mx-auto">
           {fiberPlans.map((plan, index) => (
             <motion.div
-              key={index}
+              key={plan.name}
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
@@ -132,195 +135,37 @@ export function PlansSection() {
                 </div>
               )}
 
-              {/* Card principal */}
-              <div
-                className="relative overflow-hidden pt-8 pb-7 px-5 sm:pt-10 sm:pb-8 sm:px-7 h-full"
+              {/* Arte do plano */}
+              <Image
+                src={plan.image}
+                alt={plan.alt}
+                width={508}
+                height={907}
+                sizes="(min-width: 1024px) 33vw, 448px"
+                className="w-full h-auto"
+              />
+
+              {/* CTA - largura acompanha o corpo do card na arte (~64% da largura da imagem) */}
+              <a
+                href={`https://wa.me/554835000962?text=${encodeURIComponent(plan.whatsappMessage)}`}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="relative block w-[64%] mx-auto -mt-3 text-center py-3.5 rounded-xl font-bold text-base transition-all duration-300 hover:scale-105"
                 style={{
                   background: plan.popular
-                    ? "linear-gradient(135deg, #1e3a8a 0%, #2563eb 25%, #4f46e5 60%, #7c3aed 100%)"
-                    : "linear-gradient(135deg, #1e3a8a 0%, #1e40af 35%, #3730a3 70%, #4338ca 100%)",
-                  borderRadius: "28px",
-                  border: plan.popular
-                    ? "1.5px solid rgba(167, 139, 250, 0.5)"
-                    : "1.5px solid rgba(147, 197, 253, 0.4)",
+                    ? "linear-gradient(135deg, #06b6d4 0%, #0891b2 100%)"
+                    : "linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(219, 234, 254, 0.95) 100%)",
+                  color: plan.popular ? "white" : "#1e3a8a",
                   boxShadow: plan.popular
-                    ? "0 28px 70px rgba(124, 58, 237, 0.5), 0 0 0 1px rgba(255,255,255,0.05), inset 0 1px 0 rgba(255,255,255,0.25)"
-                    : "0 24px 60px rgba(37, 99, 235, 0.35), 0 0 0 1px rgba(255,255,255,0.05), inset 0 1px 0 rgba(255,255,255,0.2)",
+                    ? "0 8px 24px rgba(6, 182, 212, 0.5), inset 0 1px 0 rgba(255,255,255,0.4)"
+                    : "0 8px 24px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.6)",
+                  border: plan.popular
+                    ? "1px solid rgba(165, 243, 252, 0.5)"
+                    : "1px solid rgba(147, 197, 253, 0.4)",
                 }}
               >
-                {/* Reflexo no topo */}
-                <div
-                  className="absolute top-0 left-0 right-0 h-1/2 pointer-events-none"
-                  style={{
-                    background:
-                      "linear-gradient(180deg, rgba(255,255,255,0.15) 0%, transparent 100%)",
-                    borderRadius: "28px 28px 0 0",
-                  }}
-                />
-                {/* Linha de luz no topo */}
-                <div
-                  className="absolute top-0 left-8 right-8 h-px pointer-events-none"
-                  style={{
-                    background:
-                      "linear-gradient(90deg, transparent, rgba(255,255,255,0.5), transparent)",
-                  }}
-                />
-                {/* Glow decorativo */}
-                <div
-                  className="absolute -top-20 -right-20 w-56 h-56 rounded-full pointer-events-none opacity-40"
-                  style={{
-                    background:
-                      "radial-gradient(circle, rgba(96, 165, 250, 0.6) 0%, transparent 70%)",
-                    filter: "blur(40px)",
-                  }}
-                />
-
-                {/* Nome do plano */}
-                <div className="relative mb-5 sm:mb-6">
-                  <h3
-                    className="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-none tracking-tight"
-                    style={{
-                      textShadow:
-                        "0 2px 8px rgba(0,0,0,0.4), 0 0 30px rgba(147, 197, 253, 0.25)",
-                    }}
-                  >
-                    UP {plan.name.toUpperCase()}
-                  </h3>
-                </div>
-
-                {/* Card interno - Velocidade + Preço (glassmorphism) */}
-                <div
-                  className="relative px-5 py-4 rounded-2xl mb-6 backdrop-blur-3xl"
-                  style={{
-                    background:
-                      "linear-gradient(135deg, rgba(255,255,255,0.32) 0%, rgba(255,255,255,0.14) 100%)",
-                    border: "1.5px solid rgba(255, 255, 255, 0.35)",
-                    boxShadow:
-                      "inset 0 1px 0 rgba(255,255,255,0.5), inset 0 -1px 0 rgba(255,255,255,0.1), 0 12px 40px rgba(0,0,0,0.35)",
-                    backdropFilter: "blur(80px) saturate(1.8)",
-                    WebkitBackdropFilter: "blur(80px) saturate(1.8)",
-                  }}
-                >
-                  <div className="flex items-baseline justify-between gap-2 sm:gap-3 flex-wrap">
-                    <div className="flex items-baseline">
-                      <span
-                        className="text-3xl sm:text-4xl lg:text-5xl font-black text-white leading-none"
-                        style={{ textShadow: "0 2px 6px rgba(0,0,0,0.3)" }}
-                      >
-                        {plan.speed}
-                      </span>
-                      <span className="text-sm sm:text-base font-bold text-blue-100 ml-1.5">
-                        mb
-                      </span>
-                    </div>
-                    <div
-                      className="h-8 sm:h-10 w-px"
-                      style={{
-                        background:
-                          "linear-gradient(180deg, transparent, rgba(255,255,255,0.4), transparent)",
-                      }}
-                    />
-                    <div className="flex items-baseline">
-                      <span className="text-xs sm:text-sm font-bold text-blue-100 mr-1">
-                        R$
-                      </span>
-                      <span
-                        className="text-2xl sm:text-3xl lg:text-4xl font-black text-white leading-none"
-                        style={{ textShadow: "0 2px 6px rgba(0,0,0,0.3)" }}
-                      >
-                        {plan.price.split(",")[0]}
-                      </span>
-                      <span className="text-lg sm:text-xl lg:text-2xl font-black text-white">
-                        ,{plan.price.split(",")[1]}
-                      </span>
-                    </div>
-                  </div>
-                </div>
-
-                {/* Benefícios */}
-                <ul className="relative space-y-3 mb-7">
-                  <li className="flex items-center gap-3 text-blue-50">
-                    <div
-                      className="flex items-center justify-center w-8 h-8 rounded-full"
-                      style={{
-                        background: "rgba(255,255,255,0.12)",
-                        border: "1px solid rgba(255,255,255,0.25)",
-                      }}
-                    >
-                      <Wifi className="w-4 h-4 text-blue-200" />
-                    </div>
-                    <span className="text-sm font-medium">
-                      Roteador Wi-Fi em comodato
-                    </span>
-                  </li>
-                  <li className="flex items-center gap-3 text-blue-50">
-                    <div
-                      className="flex items-center justify-center w-8 h-8 rounded-full"
-                      style={{
-                        background: "rgba(255,255,255,0.12)",
-                        border: "1px solid rgba(255,255,255,0.25)",
-                      }}
-                    >
-                      <Download className="w-4 h-4 text-blue-200" />
-                    </div>
-                    <span className="text-sm font-medium">
-                      Download {plan.speed}MB
-                    </span>
-                  </li>
-                  <li className="flex items-center gap-3 text-blue-50">
-                    <div
-                      className="flex items-center justify-center w-8 h-8 rounded-full"
-                      style={{
-                        background: "rgba(255,255,255,0.12)",
-                        border: "1px solid rgba(255,255,255,0.25)",
-                      }}
-                    >
-                      <Upload className="w-4 h-4 text-blue-200" />
-                    </div>
-                    <span className="text-sm font-medium">
-                      Upload {plan.upload}MB
-                    </span>
-                  </li>
-                  <li className="flex items-center gap-3 text-blue-50">
-                    <div
-                      className="flex items-center justify-center w-8 h-8 rounded-full"
-                      style={{
-                        background: "rgba(255,255,255,0.12)",
-                        border: "1px solid rgba(255,255,255,0.25)",
-                      }}
-                    >
-                      <InfinityIcon className="w-4 h-4 text-blue-200" />
-                    </div>
-                    <span className="text-sm font-medium">
-                      Internet ilimitada
-                    </span>
-                  </li>
-                </ul>
-
-                {/* CTA */}
-                <a
-                  href={`https://wa.me/554835000962?text=${encodeURIComponent(
-                    `Olá! Quero assinar o plano UP ${plan.name} de ${plan.speed}MB.`,
-                  )}`}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="relative block w-full text-center py-3.5 rounded-xl font-bold text-base transition-all duration-300 hover:scale-105"
-                  style={{
-                    background: plan.popular
-                      ? "linear-gradient(135deg, #06b6d4 0%, #0891b2 100%)"
-                      : "linear-gradient(135deg, rgba(255,255,255,0.95) 0%, rgba(219, 234, 254, 0.95) 100%)",
-                    color: plan.popular ? "white" : "#1e3a8a",
-                    boxShadow: plan.popular
-                      ? "0 8px 24px rgba(6, 182, 212, 0.5), inset 0 1px 0 rgba(255,255,255,0.4)"
-                      : "0 8px 24px rgba(0,0,0,0.2), inset 0 1px 0 rgba(255,255,255,0.6)",
-                    border: plan.popular
-                      ? "1px solid rgba(165, 243, 252, 0.5)"
-                      : "1px solid rgba(147, 197, 253, 0.4)",
-                  }}
-                >
-                  Assine agora
-                </a>
-              </div>
+                Assine agora
+              </a>
             </motion.div>
           ))}
         </div>

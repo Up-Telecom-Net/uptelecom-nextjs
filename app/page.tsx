@@ -5,7 +5,6 @@ import { StatsSection } from "@/components/sections/StatsSection";
 import { ServicesSection } from "@/components/sections/ServicesSection";
 import { FeaturesSection } from "@/components/sections/FeaturesSection";
 import { PlansSection } from "@/components/sections/PlansSection";
-import { GamerPlanSection } from "@/components/sections/GamerPlanSection";
 import { BusinessPlanSection } from "@/components/sections/BusinessPlanSection";
 import { PhonePlanSection } from "@/components/sections/PhonePlanSection";
 import { CoverageSection } from "@/components/sections/CoverageSection";
@@ -15,10 +14,10 @@ import { CTASection } from "@/components/sections/CTASection";
 
 export const metadata = {
   title: "Internet Fibra Óptica em Florianópolis | Up Telecom",
-  description: "Internet fibra óptica de alta velocidade em Florianópolis. Planos de 550MB a 900MB. Tecnologia de ponta, suporte especializado e internet ilimitada.",
+  description: "Internet fibra óptica de alta velocidade em Florianópolis. Planos de 600MB e 700MB e plano gamer com ExitLag. Tecnologia de ponta, suporte especializado e internet ilimitada.",
   openGraph: {
     title: "Up Telecom - Internet Fibra Óptica em Florianópolis",
-    description: "Internet fibra óptica de alta velocidade em Florianópolis. Planos de 550MB a 900MB.",
+    description: "Internet fibra óptica de alta velocidade em Florianópolis. Planos de 600MB e 700MB e plano gamer com ExitLag.",
   },
 };
 
@@ -28,7 +27,6 @@ export default function Home() {
       <HeroSection />
       <AttendBannerSection />
       <PlansSection />
-      <GamerPlanSection />
       <BusinessPlanSection />
       <PhonePlanSection />
       <StatsSection />

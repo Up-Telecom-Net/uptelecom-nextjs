@@ -4,16 +4,15 @@ import { CTASection } from "@/components/sections/CTASection";
 export const metadata = {
   title: "Planos de internet fibra óptica em Florianópolis",
   description:
-    "Planos de internet fibra óptica residenciais (550MB, 700MB e 900MB), empresariais (400MB e 600MB), gamer (1000MB) e telefone fixo. Wi-Fi em comodato, sem franquia e suporte local em Florianópolis.",
+    "Planos de internet fibra óptica residenciais (600MB e 700MB), empresariais (400MB e 600MB), plano gamer com ExitLag e telefone fixo. Wi-Fi em comodato, sem franquia e suporte local em Florianópolis.",
   keywords: [
     "planos de internet florianópolis",
     "planos fibra óptica",
     "planos internet residencial",
     "planos internet empresarial",
-    "internet 550mb florianópolis",
+    "internet 600mb florianópolis",
     "internet 700mb florianópolis",
-    "internet 900mb florianópolis",
-    "internet 1000mb gamer",
+    "plano gamer florianópolis",
     "telefone fixo florianópolis",
     "preço internet fibra florianópolis",
   ],
