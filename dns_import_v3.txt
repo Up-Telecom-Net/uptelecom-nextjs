@@ -1,0 +1,16 @@
+$ORIGIN uptelecomnet.com.br.
+
+; ---- Site (Next.js no VPS promove.mais / Coolify) ----
+@	300	IN	A	187.127.28.154
+www	300	IN	A	187.127.28.154
+
+; ---- E-mail Hostinger (mantidos exatamente como estao hoje) ----
+@	14400	IN	MX	5 mx1.hostinger.com.
+@	14400	IN	MX	10 mx2.hostinger.com.
+@	3600	IN	TXT	"v=spf1 include:_spf.mail.hostinger.com ~all"
+_dmarc	3600	IN	TXT	"v=DMARC1; p=quarantine; sp=quarantine; pct=100; rua=mailto:dmarc@uptelecomnet.com.br; fo=1"
+hostingermail-a._domainkey	300	IN	CNAME	hostingermail-a.dkim.mail.hostinger.com.
+hostingermail-b._domainkey	300	IN	CNAME	hostingermail-b.dkim.mail.hostinger.com.
+hostingermail-c._domainkey	300	IN	CNAME	hostingermail-c.dkim.mail.hostinger.com.
+autodiscover	300	IN	CNAME	autodiscover.mail.hostinger.com.
+autoconfig	300	IN	CNAME	autoconfig.mail.hostinger.com.

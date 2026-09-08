@@ -2,7 +2,6 @@
   "permissions": {
     "allow": [
       "Bash(git config:*)",
-      "Bash(curl -s -X POST \"https://api.github.com/user/repos\" -H \"Authorization: token ghp_6ou9PU2E9AyfXlOjug8h1nhzBgPjrq0KOjib\" -H \"Content-Type: application/json\" -d '{\"\"name\"\":\"\"uptelecom-nextjs\"\",\"\"private\"\":false,\"\"description\"\":\"\"Site Up Telecom - Next.js\"\"}')",
       "Bash(git remote:*)",
       "Bash(git push:*)",
       "Bash(ls ~/.ssh/id_*)",
