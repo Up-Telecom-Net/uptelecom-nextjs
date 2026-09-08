@@ -13,8 +13,8 @@ type BusinessPlan = {
 };
 
 const businessPlans: BusinessPlan[] = [
-  { speed: "400", price: "159,99", tag: "Essencial" },
-  { speed: "600", price: "179,99", tag: "Mais Pedido", highlight: true },
+  { speed: "600", price: "109,90", tag: "Essencial" },
+  { speed: "700", price: "119,90", tag: "Mais Pedido", highlight: true },
 ];
 
 export function BusinessPlanSection() {

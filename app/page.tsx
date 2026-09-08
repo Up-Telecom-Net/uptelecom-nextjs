@@ -5,6 +5,7 @@ import { StatsSection } from "@/components/sections/StatsSection";
 import { ServicesSection } from "@/components/sections/ServicesSection";
 import { FeaturesSection } from "@/components/sections/FeaturesSection";
 import { PlansSection } from "@/components/sections/PlansSection";
+import { GamerPlanSection } from "@/components/sections/GamerPlanSection";
 import { BusinessPlanSection } from "@/components/sections/BusinessPlanSection";
 import { PhonePlanSection } from "@/components/sections/PhonePlanSection";
 import { CoverageSection } from "@/components/sections/CoverageSection";
@@ -27,6 +28,7 @@ export default function Home() {
       <HeroSection />
       <AttendBannerSection />
       <PlansSection />
+      <GamerPlanSection />
       <BusinessPlanSection />
       <PhonePlanSection />
       <StatsSection />

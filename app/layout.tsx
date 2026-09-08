@@ -13,7 +13,7 @@ export const metadata: Metadata = {
     template: "%s | Up Telecom",
   },
   description:
-    "Internet fibra óptica de alta velocidade em Florianópolis com planos residenciais e empresariais de 400MB a 1000MB. Wi-Fi em comodato, suporte local e internet ilimitada para os bairros Itacurubi, Agronômica, Monte Serrat, Trindade, Caeira, Saco dos Limões, Centro, Serrinha, Carvoeira, Pantanal, Monte Verde e Saco Grande.",
+    "Internet fibra óptica de alta velocidade em Florianópolis com planos residenciais e empresariais de 600MB e 700MB e plano gamer com ExitLag. Wi-Fi em comodato, suporte local e internet ilimitada para os bairros Itacurubi, Agronômica, Monte Serrat, Trindade, Caeira, Saco dos Limões, Centro, Serrinha, Carvoeira, Pantanal, Monte Verde e Saco Grande.",
   applicationName: "Up Telecom",
   category: "Telecomunicações",
   keywords: [

@@ -153,7 +153,7 @@ export function GamerPlanSection() {
 
                 {/* Conteúdo */}
                 <div className="relative flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3 sm:gap-6">
-                  {/* UP GAMER */}
+                  {/* PLANO GAMER */}
                   <div className="sm:flex-1 sm:min-w-[180px]">
                     <h3
                       className="text-3xl sm:text-5xl md:text-6xl lg:text-7xl font-black leading-none tracking-tight"
@@ -168,7 +168,7 @@ export function GamerPlanSection() {
                             "0 2px 8px rgba(0,0,0,0.4), 0 0 30px rgba(147, 197, 253, 0.3)",
                         }}
                       >
-                        UP GAMER
+                        PLANO GAMER
                       </span>
                     </h3>
                   </div>
@@ -190,13 +190,10 @@ export function GamerPlanSection() {
                     <div className="flex items-center justify-between sm:hidden">
                       <div className="flex items-baseline">
                         <span
-                          className="text-4xl font-black text-white leading-none"
+                          className="text-3xl font-black text-white leading-none"
                           style={{ textShadow: "0 2px 6px rgba(0,0,0,0.3)" }}
                         >
-                          1000
-                        </span>
-                        <span className="text-base font-bold text-blue-100 ml-1">
-                          mb
+                          +ExitLag
                         </span>
                       </div>
                       <div
@@ -214,7 +211,7 @@ export function GamerPlanSection() {
                           className="text-3xl font-black text-white leading-none"
                           style={{ textShadow: "0 2px 6px rgba(0,0,0,0.3)" }}
                         >
-                          189
+                          169
                         </span>
                         <span className="text-xl font-black text-white">
                           ,90
@@ -226,13 +223,10 @@ export function GamerPlanSection() {
                     <div className="hidden sm:block">
                       <div className="flex items-baseline justify-end">
                         <span
-                          className="text-5xl font-black text-white leading-none"
+                          className="text-4xl font-black text-white leading-none"
                           style={{ textShadow: "0 2px 6px rgba(0,0,0,0.3)" }}
                         >
-                          1000
-                        </span>
-                        <span className="text-lg font-bold text-blue-100 ml-1.5">
-                          mb
+                          +ExitLag
                         </span>
                       </div>
                       <div
@@ -250,7 +244,7 @@ export function GamerPlanSection() {
                           className="text-4xl font-black text-white leading-none"
                           style={{ textShadow: "0 2px 6px rgba(0,0,0,0.3)" }}
                         >
-                          189
+                          169
                         </span>
                         <span className="text-3xl font-black text-white">
                           ,90
@@ -274,7 +268,7 @@ export function GamerPlanSection() {
                 <div className="flex items-center justify-center w-8 h-8 rounded-full bg-violet-500/20 border border-violet-400/40">
                   <Zap className="w-4 h-4 text-violet-300" />
                 </div>
-                <span className="font-medium">Latência ultra baixa para games online</span>
+                <span className="font-medium">ExitLag incluso: mais estabilidade nos jogos</span>
               </li>
               <li className="flex items-center gap-3 text-violet-100">
                 <div className="flex items-center justify-center w-8 h-8 rounded-full bg-violet-500/20 border border-violet-400/40">
@@ -287,7 +281,7 @@ export function GamerPlanSection() {
             {/* CTAs */}
             <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
               <a
-                href="https://wa.me/554835000962?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20plano%20UP%20GAMER%20de%201000MB."
+                href="https://wa.me/554835000962?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Plano%20Gamer%20com%20ExitLag."
                 target="_blank"
                 rel="noopener noreferrer"
                 className="group inline-flex items-center justify-center gap-2 sm:gap-3 px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl font-bold text-base sm:text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-violet-500/50"
@@ -297,7 +291,7 @@ export function GamerPlanSection() {
                 }}
               >
                 <WhatsAppIcon size={20} className="text-white" />
-                <span>Assinar UP GAMER</span>
+                <span>Assinar Plano Gamer</span>
                 <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
               </a>
               <Link
