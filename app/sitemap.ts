@@ -1,5 +1,6 @@
 import { MetadataRoute } from 'next';
 import { getAllPosts } from '@/lib/blog';
+import { bairros } from '@/lib/bairros';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const baseUrl = 'https://uptelecomnet.com.br';
@@ -9,6 +10,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     lastModified: new Date(post.date),
     changeFrequency: 'monthly' as const,
     priority: 0.7,
+  }));
+
+  const bairroPages = bairros.map((b) => ({
+    url: `${baseUrl}/cobertura/${b.slug}`,
+    lastModified: new Date(),
+    changeFrequency: 'monthly' as const,
+    priority: 0.8,
   }));
 
   return [
@@ -37,6 +45,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.8,
     },
+    ...bairroPages,
     {
       url: `${baseUrl}/sobre`,
       lastModified: new Date(),

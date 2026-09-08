@@ -1,23 +1,12 @@
 "use client";
 
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { MapPin, Radio, ArrowRight, CheckCircle2 } from "lucide-react";
 import { WhatsAppIcon } from "@/components/icons/WhatsAppIcon";
+import { bairros } from "@/lib/bairros";
 
-const neighborhoods = [
-  "ITACURUBI",
-  "AGRONÔMICA",
-  "MONTE SERRAT",
-  "TRINDADE",
-  "CAEIRA",
-  "SACO DOS LIMÕES",
-  "CENTRO",
-  "SERRINHA",
-  "CARVOEIRA",
-  "PANTANAL",
-  "MONTE VERDE",
-  "SACO GRANDE",
-];
+const neighborhoods = bairros;
 
 export function CoverageSection() {
   return (
@@ -174,13 +163,13 @@ export function CoverageSection() {
                 <div className="grid grid-cols-2 sm:grid-cols-2 gap-2 sm:gap-3">
                   {neighborhoods.map((neighborhood, index) => (
                     <motion.div
-                      key={index}
+                      key={neighborhood.slug}
                       initial={{ opacity: 0, scale: 0.9 }}
                       whileInView={{ opacity: 1, scale: 1 }}
                       viewport={{ once: true }}
                       transition={{ duration: 0.3, delay: index * 0.04 }}
                       whileHover={{ scale: 1.04, y: -2 }}
-                      className="relative px-2.5 sm:px-3 py-2.5 sm:py-3 rounded-xl backdrop-blur-3xl flex items-center gap-1.5 sm:gap-2 cursor-default"
+                      className="relative rounded-xl backdrop-blur-3xl"
                       style={{
                         background:
                           "linear-gradient(135deg, rgba(255,255,255,0.18) 0%, rgba(255,255,255,0.06) 100%)",
@@ -191,10 +180,16 @@ export function CoverageSection() {
                         WebkitBackdropFilter: "blur(40px) saturate(1.5)",
                       }}
                     >
-                      <CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-cyan-300 shrink-0" />
-                      <span className="text-[11px] sm:text-xs md:text-sm font-bold text-white tracking-wide truncate">
-                        {neighborhood}
-                      </span>
+                      <Link
+                        href={`/cobertura/${neighborhood.slug}`}
+                        title={`Internet fibra óptica ${neighborhood.local}`}
+                        className="flex items-center gap-1.5 sm:gap-2 px-2.5 sm:px-3 py-2.5 sm:py-3"
+                      >
+                        <CheckCircle2 className="w-3.5 h-3.5 sm:w-4 sm:h-4 text-cyan-300 shrink-0" />
+                        <span className="text-[11px] sm:text-xs md:text-sm font-bold text-white tracking-wide truncate uppercase">
+                          {neighborhood.nome}
+                        </span>
+                      </Link>
                     </motion.div>
                   ))}
                 </div>
