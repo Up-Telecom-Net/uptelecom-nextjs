@@ -279,12 +279,12 @@ export function GamerPlanSection() {
             </ul>
 
             {/* CTAs */}
-            <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
+            <div className="flex flex-col sm:flex-row sm:flex-wrap gap-3 sm:gap-4">
               <a
                 href="https://wa.me/554835000962?text=Ol%C3%A1%21%20Tenho%20interesse%20no%20Plano%20Gamer%20com%20ExitLag."
                 target="_blank"
                 rel="noopener noreferrer"
-                className="group inline-flex items-center justify-center gap-2 sm:gap-3 px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl font-bold text-base sm:text-lg transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-violet-500/50"
+                className="group inline-flex items-center justify-center gap-2 sm:gap-3 px-6 py-3.5 sm:py-4 rounded-xl font-bold text-base sm:text-lg whitespace-nowrap transition-all duration-300 hover:scale-105 hover:shadow-2xl hover:shadow-violet-500/50"
                 style={{
                   background: "linear-gradient(135deg, #8b5cf6, #6366f1)",
                   color: "white",
@@ -296,7 +296,7 @@ export function GamerPlanSection() {
               </a>
               <Link
                 href="/planos"
-                className="inline-flex items-center justify-center gap-2 px-6 sm:px-8 py-3.5 sm:py-4 rounded-xl font-semibold text-base sm:text-lg border-2 border-violet-400/50 text-white hover:bg-violet-500/20 hover:border-violet-300 transition-all duration-300 backdrop-blur-sm"
+                className="inline-flex items-center justify-center gap-2 px-6 py-3.5 sm:py-4 rounded-xl font-semibold text-base sm:text-lg whitespace-nowrap border-2 border-violet-400/50 text-white hover:bg-violet-500/20 hover:border-violet-300 transition-all duration-300 backdrop-blur-sm"
               >
                 Consulte mais planos
               </Link>
