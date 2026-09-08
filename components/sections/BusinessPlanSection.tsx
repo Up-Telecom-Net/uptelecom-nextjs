@@ -169,26 +169,22 @@ export function BusinessPlanSection() {
                     className="relative overflow-hidden p-4 sm:p-6 pt-6 sm:pt-8"
                     style={{
                       background: plan.highlight
-                        ? "linear-gradient(135deg, #0c4a6e 0%, #0369a1 25%, #0284c7 55%, #06b6d4 100%)"
-                        : "linear-gradient(135deg, rgba(8, 47, 73, 0.55) 0%, rgba(15, 23, 42, 0.7) 100%)",
+                        ? "linear-gradient(135deg, #ffffff 0%, #ecfeff 100%)"
+                        : "linear-gradient(135deg, #ffffff 0%, #f1f5f9 100%)",
                       borderRadius: "24px",
                       border: plan.highlight
-                        ? "2px solid rgba(125, 211, 252, 0.85)"
-                        : "1.5px solid rgba(125, 211, 252, 0.35)",
+                        ? "2px solid #22d3ee"
+                        : "1.5px solid rgba(255, 255, 255, 0.9)",
                       boxShadow: plan.highlight
-                        ? "0 24px 60px rgba(6, 182, 212, 0.55), 0 0 0 1px rgba(255,255,255,0.08), inset 0 1px 0 rgba(255,255,255,0.35), 0 0 40px rgba(56, 189, 248, 0.4)"
-                        : "0 12px 32px rgba(0, 0, 0, 0.45), inset 0 1px 0 rgba(255,255,255,0.12)",
-                      backdropFilter: plan.highlight ? undefined : "blur(20px)",
-                      WebkitBackdropFilter: plan.highlight ? undefined : "blur(20px)",
+                        ? "0 24px 60px rgba(6, 182, 212, 0.45), 0 0 0 1px rgba(255,255,255,0.6)"
+                        : "0 12px 32px rgba(0, 0, 0, 0.35)",
                     }}
                   >
                     {/* Reflexo no topo */}
                     <div
                       className="absolute top-0 left-0 right-0 h-1/2 pointer-events-none"
                       style={{
-                        background: plan.highlight
-                          ? "linear-gradient(180deg, rgba(255,255,255,0.22) 0%, transparent 100%)"
-                          : "linear-gradient(180deg, rgba(255,255,255,0.08) 0%, transparent 100%)",
+                        background: "linear-gradient(180deg, rgba(14, 165, 233, 0.08) 0%, transparent 100%)",
                         borderRadius: "24px 24px 0 0",
                       }}
                     />
@@ -196,9 +192,7 @@ export function BusinessPlanSection() {
                     <div
                       className="absolute top-0 left-6 right-6 h-px pointer-events-none"
                       style={{
-                        background: plan.highlight
-                          ? "linear-gradient(90deg, transparent, rgba(255,255,255,0.7), transparent)"
-                          : "linear-gradient(90deg, transparent, rgba(125, 211, 252, 0.5), transparent)",
+                        background: "linear-gradient(90deg, transparent, rgba(14, 165, 233, 0.35), transparent)",
                       }}
                     />
                     {/* Glow */}
@@ -206,10 +200,10 @@ export function BusinessPlanSection() {
                       className="absolute -top-16 -right-16 w-56 h-56 rounded-full pointer-events-none"
                       style={{
                         background: plan.highlight
-                          ? "radial-gradient(circle, rgba(34, 211, 238, 0.85) 0%, transparent 70%)"
-                          : "radial-gradient(circle, rgba(56, 189, 248, 0.25) 0%, transparent 70%)",
+                          ? "radial-gradient(circle, rgba(34, 211, 238, 0.35) 0%, transparent 70%)"
+                          : "radial-gradient(circle, rgba(56, 189, 248, 0.2) 0%, transparent 70%)",
                         filter: "blur(40px)",
-                        opacity: plan.highlight ? 0.55 : 0.4,
+                        opacity: plan.highlight ? 0.5 : 0.35,
                       }}
                     />
 
@@ -218,25 +212,20 @@ export function BusinessPlanSection() {
                       <div className="flex flex-col shrink-0">
                         <span
                           className={`text-[10px] sm:text-sm font-bold tracking-[0.2em] sm:tracking-[0.25em] uppercase mb-0.5 sm:mb-1 ${
-                            plan.highlight ? "text-cyan-100" : "text-sky-300/80"
+                            plan.highlight ? "text-cyan-700" : "text-slate-500"
                           }`}
                         >
                           Até
                         </span>
                         <div className="flex items-baseline">
                           <span
-                            className="text-4xl sm:text-6xl md:text-7xl font-black text-white leading-none"
-                            style={{
-                              textShadow: plan.highlight
-                                ? "0 2px 8px rgba(0,0,0,0.35), 0 0 30px rgba(34, 211, 238, 0.5)"
-                                : "0 2px 6px rgba(0,0,0,0.5)",
-                            }}
+                            className="text-4xl sm:text-6xl md:text-7xl font-black text-slate-900 leading-none"
                           >
                             {plan.speed}
                           </span>
                           <span
                             className={`text-sm sm:text-xl font-bold ml-1 sm:ml-1.5 ${
-                              plan.highlight ? "text-cyan-100" : "text-sky-200"
+                              plan.highlight ? "text-cyan-700" : "text-slate-500"
                             }`}
                           >
                             mb
@@ -248,9 +237,7 @@ export function BusinessPlanSection() {
                       <div
                         className="h-12 sm:h-14 w-px shrink-0"
                         style={{
-                          background: plan.highlight
-                            ? "linear-gradient(180deg, transparent, rgba(255,255,255,0.55), transparent)"
-                            : "linear-gradient(180deg, transparent, rgba(125, 211, 252, 0.4), transparent)",
+                          background: "linear-gradient(180deg, transparent, rgba(15, 23, 42, 0.15), transparent)",
                         }}
                       />
 
@@ -259,22 +246,20 @@ export function BusinessPlanSection() {
                         className="relative flex-1 sm:flex-none px-3 sm:px-5 py-2.5 sm:py-3.5 rounded-xl sm:rounded-2xl backdrop-blur-3xl"
                         style={{
                           background: plan.highlight
-                            ? "linear-gradient(135deg, rgba(255,255,255,0.35) 0%, rgba(255,255,255,0.15) 100%)"
-                            : "linear-gradient(135deg, rgba(15, 23, 42, 0.75) 0%, rgba(8, 47, 73, 0.6) 100%)",
+                            ? "linear-gradient(135deg, #0891b2 0%, #06b6d4 100%)"
+                            : "linear-gradient(135deg, #0f172a 0%, #1e3a8a 100%)",
                           border: plan.highlight
-                            ? "1.5px solid rgba(255, 255, 255, 0.4)"
-                            : "1.5px solid rgba(125, 211, 252, 0.45)",
+                            ? "1.5px solid rgba(255, 255, 255, 0.5)"
+                            : "1.5px solid rgba(30, 58, 138, 0.6)",
                           boxShadow: plan.highlight
-                            ? "inset 0 1px 0 rgba(255,255,255,0.55), 0 8px 24px rgba(0,0,0,0.3)"
-                            : "inset 0 1px 0 rgba(125, 211, 252, 0.25), 0 8px 24px rgba(0,0,0,0.4)",
-                          backdropFilter: "blur(40px) saturate(1.8)",
-                          WebkitBackdropFilter: "blur(40px) saturate(1.8)",
+                            ? "inset 0 1px 0 rgba(255,255,255,0.45), 0 8px 24px rgba(6, 182, 212, 0.4)"
+                            : "inset 0 1px 0 rgba(255,255,255,0.12), 0 8px 24px rgba(15, 23, 42, 0.35)",
                         }}
                       >
                         <div className="flex items-baseline justify-end">
                           <span
                             className={`text-[10px] sm:text-sm font-bold mr-1 ${
-                              plan.highlight ? "text-cyan-100" : "text-sky-300"
+                              plan.highlight ? "text-cyan-50" : "text-sky-200"
                             }`}
                           >
                             R$
@@ -291,7 +276,7 @@ export function BusinessPlanSection() {
                         </div>
                         <div
                           className={`text-[9px] sm:text-xs font-semibold tracking-wider uppercase mt-0.5 text-right ${
-                            plan.highlight ? "text-cyan-100/80" : "text-sky-300/70"
+                            plan.highlight ? "text-cyan-50/90" : "text-sky-200/80"
                           }`}
                         >
                           /mês
@@ -308,30 +293,26 @@ export function BusinessPlanSection() {
               <div
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-xl backdrop-blur-3xl"
                 style={{
-                  background:
-                    "linear-gradient(135deg, rgba(255,255,255,0.22) 0%, rgba(255,255,255,0.08) 100%)",
-                  border: "1px solid rgba(186, 230, 253, 0.4)",
-                  backdropFilter: "blur(20px)",
-                  WebkitBackdropFilter: "blur(20px)",
+                  background: "rgba(255,255,255,0.92)",
+                  border: "1px solid rgba(186, 230, 253, 0.9)",
+                  boxShadow: "0 6px 16px rgba(0,0,0,0.15)",
                 }}
               >
-                <Shield className="w-4 h-4 text-sky-200 shrink-0" />
-                <span className="text-xs sm:text-sm font-semibold text-white">
+                <Shield className="w-4 h-4 text-sky-600 shrink-0" />
+                <span className="text-xs sm:text-sm font-semibold text-slate-800">
                   Suporte prioritário
                 </span>
               </div>
               <div
                 className="inline-flex items-center gap-2 px-4 py-2 rounded-xl backdrop-blur-3xl"
                 style={{
-                  background:
-                    "linear-gradient(135deg, rgba(255,255,255,0.22) 0%, rgba(255,255,255,0.08) 100%)",
-                  border: "1px solid rgba(186, 230, 253, 0.4)",
-                  backdropFilter: "blur(20px)",
-                  WebkitBackdropFilter: "blur(20px)",
+                  background: "rgba(255,255,255,0.92)",
+                  border: "1px solid rgba(186, 230, 253, 0.9)",
+                  boxShadow: "0 6px 16px rgba(0,0,0,0.15)",
                 }}
               >
-                <Globe className="w-4 h-4 text-sky-200 shrink-0" />
-                <span className="text-xs sm:text-sm font-semibold text-white">
+                <Globe className="w-4 h-4 text-sky-600 shrink-0" />
+                <span className="text-xs sm:text-sm font-semibold text-slate-800">
                   1 IP fixo incluso
                 </span>
               </div>
